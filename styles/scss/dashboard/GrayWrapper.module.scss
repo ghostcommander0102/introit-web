@@ -1,0 +1,20 @@
+@import "../theme/index";
+.wrapper {
+  height: calc(100vh - 141px);
+  overflow-y: scroll;
+  width: 100%;
+  padding: 8px;
+  z-index: 34;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $light-border-col;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    overflow-y: inherit;
+    height: 100%;
+  }
+}

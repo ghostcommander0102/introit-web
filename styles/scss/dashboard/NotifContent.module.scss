@@ -1,0 +1,75 @@
+@import "../theme/index";
+.lightNotifWrapper {
+  background-color: $light-background2;
+  display: flex;
+  height: 33px;
+}
+.darkNotifWrapper {
+  background-color: $dark-background2 !important;
+  display: flex;
+  height: 33px;
+}
+.lightPrivacyWrapper {
+  background-color: $light-background2;
+  display: flex;
+  height: 33px;
+}
+.darkPrivacyWrapper {
+  background-color: $dark-background2 !important;
+  display: flex;
+  height: 33px;
+}
+.lightItemText {
+  margin-bottom: 0;
+  color: $light-body;
+  white-space: nowrap;
+  @extend .small;
+}
+.darkItemText {
+  color: $dark-body;
+  margin-bottom: 0;
+  white-space: nowrap;
+  @extend .small;
+}
+.lightNotifText {
+  margin-bottom: 0;
+  color: $light-body;
+  @extend .small;
+}
+.darkNotifText {
+  color: $dark-body;
+  margin-bottom: 0;
+  @extend .small;
+}
+.lightTitle {
+  @extend .body;
+  color: $light-body;
+  margin-bottom: 0;
+}
+.darkTitle {
+  @extend .body;
+  color: $dark-body;
+  margin-bottom: 0;
+}
+.lightWrapperMobile {
+  background-color: $light-background2;
+  height: 26px;
+}
+.darkWrapperMobile {
+  background-color: $dark-background2;
+  height: 26px;
+}
+@media only screen and (max-width: 768px) {
+  .lightNotifWrapper {
+    height: 63px;
+  }
+  .darkNotifWrapper {
+    height: 63px;
+  }
+  .lightPrivacyWrapper {
+    height: 37px;
+  }
+  .darkPrivacyWrapper {
+    height: 37px;
+  }
+}

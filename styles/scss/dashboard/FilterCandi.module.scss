@@ -1,0 +1,51 @@
+@import "../theme/index";
+.lightInput {
+  height: 32px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  background: $light-background !important;
+  input {
+    color: $light-body !important;
+    background: $light-background !important;
+    @extend .body;
+    &::placeholder {
+      color: $light-border-col !important;
+    }
+    &:focus {
+      background-color: $light-background !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: $light-background;
+    }
+  }
+}
+.darkInput {
+  height: 32px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  background: $dark-background !important;
+  input {
+    color: $dark-body !important;
+    background: $dark-background !important;
+    @extend .body;
+    &::placeholder {
+      color: $dark-border-col !important;
+    }
+    &:focus {
+      background-color: $dark-background !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: $dark-background;
+    }
+  }
+}

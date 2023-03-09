@@ -1,0 +1,83 @@
+@import "../theme/index";
+.lightInput {
+  background: $light-background2 !important;
+  border-radius: 8px;
+  border: 0;
+  width: 100%;
+  color: $light-body !important;
+  height: 45px;
+  input {
+    color: $light-body !important;
+    @extend .body;
+    &::placeholder {
+      color: $light-border-col !important;
+    }
+    &:focus {
+      background: $light-background2 !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0px !important;
+      color: $light-body !important;
+    }
+    &:disabled {
+      cursor: no-drop;
+      color: $light-body !important;
+      background: $light-background2 !important;
+    }
+  }
+}
+
+.darkInput {
+  background: $dark-background2 !important;
+  border-radius: 8px;
+  border: 0;
+  width: 100%;
+  color: $dark-body !important;
+  height: 45px;
+  input {
+    color: $dark-body !important;
+    @extend .body;
+    &::placeholder {
+      color: $dark-border-col !important;
+    }
+    &:focus {
+      background: $dark-background2 !important;
+      outline: 0 !important;
+      box-shadow: 0 0 0px !important;
+      color: $dark-body !important;
+    }
+    &:disabled {
+      cursor: no-drop;
+      color: $dark-body !important;
+      background: $dark-background2 !important;
+    }
+  }
+}
+
+.lightLabel {
+  @extend .light-title;
+  width: 100%;
+  color: $light-body;
+}
+.darkLabel {
+  @extend .light-title;
+  color: $dark-body;
+  width: 100%;
+}
+.setDate {
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 40px;
+  background: $focused;
+  border-radius: 8px;
+  margin: 5px;
+  @extend .button;
+  color: $light-background;
+  &:hover {
+    border: 1px solid $focused;
+    color: $focused;
+  }
+}

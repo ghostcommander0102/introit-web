@@ -1,0 +1,68 @@
+@import "../theme/index";
+.wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.imageWrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 201px;
+  width: 142px;
+  cursor: pointer;
+}
+.active {
+  border: 1px solid $focused;
+  border-radius: 8px;
+}
+.button {
+  background-color: $focused;
+  color: $light-background;
+  border-radius: 0;
+  width: 100%;
+  border: 0;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+.colorPicker {
+  background-color: $light-background;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  &:focus {
+    background-color: $light-background;
+    border: 0;
+  }
+  &:hover {
+    background-color: $light-background;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+  .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

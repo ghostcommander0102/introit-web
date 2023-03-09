@@ -1,0 +1,316 @@
+@import "../theme/index";
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.lightButton {
+	background-color: $light-background;
+	color: $light-body;
+	border: 0;
+	@extend .small;
+	box-shadow: 0 0 0px;
+	border-radius: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	padding: 0;
+
+	&:hover {
+		color: $light-body;
+		background-color: $light-background;
+	}
+
+	&:focus {
+		color: $light-body;
+		background-color: $light-background;
+	}
+}
+
+.darkButton {
+	background-color: $dark-background2;
+	color: $dark-body;
+	border: 0;
+	@extend .small;
+	box-shadow: 0 0 0px;
+	border-radius: 0;
+	width: 83px;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+
+	&:hover {
+		color: $dark-body;
+		background-color: $dark-background2;
+	}
+
+	&:focus {
+		color: $dark-body;
+		background-color: $dark-background2;
+	}
+}
+
+.gradientButton {
+	background: linear-gradient(246.27deg, #bdd5eb 13.31%, #c6f5dc 65.27%);
+	color: $light-body;
+	border: 0;
+	@extend .small;
+	box-shadow: 0 0 0px;
+	border-radius: 0;
+	width: 83px;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+
+	&:hover {
+		color: $light-body;
+		background: linear-gradient(246.27deg, #bdd5eb 13.31%, #c6f5dc 65.27%);
+	}
+
+	&:focus {
+		color: $light-body;
+		background: linear-gradient(246.27deg, #bdd5eb 13.31%, #c6f5dc 65.27%);
+	}
+}
+
+.coloredButton {
+	background: $confirm;
+	color: $dark-body;
+	border: 0;
+	@extend .small;
+	box-shadow: 0 0 0px;
+	border-radius: 0;
+	width: 83px;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+
+	&:hover {
+		color: $dark-body;
+		background: $confirm;
+	}
+
+	&:focus {
+		color: $dark-body;
+		background: $confirm;
+	}
+}
+
+.lightWrapperTemplate {
+	background-color: $light-background2;
+}
+
+.darkWrapperTemplate {
+	background-color: $light-background2;
+}
+
+.templateList {
+	height: calc(100vh - 70px);
+	overflow-y: scroll;
+}
+
+.templateList::-webkit-scrollbar {
+	width: 4px;
+	background-color: #eee;
+}
+
+.templateList::-webkit-scrollbar-thumb {
+	background: #ced2df;
+	border-radius: 2px;
+}
+
+
+.wrapperImg {
+	border-radius: 8px;
+	overflow: hidden;
+	width: 90px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.wrapperImgActive {
+	border-radius: 8px;
+	overflow: hidden;
+	width: 90px;
+	height: 120px;
+	cursor: pointer;
+	border: 2px solid $focused;
+}
+
+.wrapperButton {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.lightBack {
+	background: $light-background2;
+	color: $light-border-col;
+	@extend .bold-body;
+	width: 50%;
+	height: 45px;
+	border-top: 1px solid $light-border;
+
+	&:hover {
+		background: $light-background2;
+		color: $light-border-col;
+		border-top: 1px solid $light-border;
+	}
+
+	&:focus {
+		background: $light-background2;
+		color: $light-border-col;
+		border-top: 1px solid $light-border;
+	}
+}
+
+.download {
+	background: $focused;
+	color: $light-background;
+	@extend .bold-body;
+	width: 100%;
+	height: 45px;
+
+	&:hover {
+		background: $focused;
+		color: $light-background;
+	}
+
+	&:focus {
+		background: $focused;
+		color: $light-background;
+	}
+
+	&:disabled {
+		background: $focused;
+		color: $light-background;
+
+		&:hover {
+			background: $focused;
+			color: $light-background;
+		}
+	}
+}
+
+.lightHeader {
+	background-color: $light-background2;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.lightButtonPaginate {
+	background-color: $light-border;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 0;
+
+	&:hover {
+		background-color: $light-border;
+	}
+
+	&:focus {
+		background-color: $light-border;
+	}
+}
+
+.lightButtonPaginateActive {
+	background-color: $light-border-col;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 0;
+
+	&:hover {
+		background-color: $light-border-col;
+	}
+
+	&:focus {
+		background-color: $light-border-col;
+	}
+}
+
+.darkButtonPaginate {
+	background-color: $dark-border;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 0;
+
+	&:hover {
+		background-color: $dark-border;
+	}
+
+	&:focus {
+		background-color: $dark-border;
+	}
+}
+
+.darkButtonPaginateActive {
+	background-color: $dark-border-col;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 16px;
+	margin-right: 16px;
+	border: 0;
+
+	&:hover {
+		background-color: $dark-border-col;
+	}
+
+	&:focus {
+		background-color: $dark-border-col;
+	}
+}
+
+.prevButton {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	&:focus {
+		background-color: transparent;
+	}
+}
+
+.nextButton {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+	transform: rotate(180deg);
+	position: relative;
+	top: 4.5px;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	&:focus {
+		background-color: transparent;
+	}
+}

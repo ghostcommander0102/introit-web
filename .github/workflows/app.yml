@@ -1,0 +1,33 @@
+name: Deploy Node.js App
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install --force
+      - name: Build the app
+        run: npm run build
+      - name: Transfer built app to server using scp
+        uses: appleboy/scp-action@master
+        with:
+          host: 65.21.253.242
+          username: root
+          # Replace <password> with the password for the remote server
+          password: ${{ secrets.password }}
+          source: "."
+          target: "/home/app"
+      - name: Run ssh command to extract and restart app
+        uses: appleboy/ssh-action@master
+        with:
+          host: 65.21.253.242
+          username: root
+          # Replace <password> with the password for the remote server
+          password: ${{ secrets.password }}
+          script: |
+            cd /home/app
+            pm2 restart app

@@ -1,0 +1,21 @@
+{
+  "name": "PWA Enviretech",
+  "short_name": "Enviretech",
+  "icons": [
+    {
+      "src": "/assets/images/logo/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/logo/logo-75x75.png",
+      "sizes": "75x75",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

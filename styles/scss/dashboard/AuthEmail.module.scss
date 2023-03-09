@@ -1,0 +1,110 @@
+@import "../theme/index";
+
+.lightLabel {
+  color: $light-body;
+  @extend .light-title;
+  width: 100%;
+}
+.darkLabel {
+  color: $dark-body;
+  @extend .light-title;
+  width: 100%;
+}
+.lightInput {
+  background: $light-background;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  color: $light-body;
+  @extend .body;
+  &::placeholder {
+    color: $light-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background: $light-background;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+    color: $light-body;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background: $light-background;
+  }
+}
+.darkInput {
+  background: $dark-background;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  color: $dark-body;
+  @extend .body;
+  &::placeholder {
+    color: $dark-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background: $dark-background;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+    color: $dark-body;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background: $dark-background;
+  }
+}
+.lightInputSuf {
+  background: $light-background;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  input {
+    background: $light-background;
+    border-radius: 8px;
+    height: 35px;
+    border: 0;
+    color: $light-body;
+    @extend .body;
+    &::placeholder {
+      color: $light-border-col !important;
+    }
+    &:focus {
+      background: $light-background;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+      color: $light-body;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background: $light-background;
+    }
+  }
+}
+.darkInputSuf {
+  background: $dark-background !important;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  input {
+    border-radius: 8px;
+    height: 35px;
+    border: 0;
+    color: $dark-body;
+    background: $dark-background !important;
+    @extend .body;
+    &::placeholder {
+      color: $dark-border-col !important;
+    }
+    &:focus {
+      background: $dark-background;
+      outline: 0 !important;
+      box-shadow: 0 0 0 !important;
+      color: $dark-body;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background: $dark-background;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../theme/index";
+.input {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #c6c2de;
+  margin-right: 10px;
+  color: #c6c2de;
+  &:focus-visible {
+    border: 0;
+  }
+}
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6e7191;
+}

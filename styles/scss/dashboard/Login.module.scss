@@ -1,0 +1,256 @@
+@import "../theme/index";
+.wrapperSignup {
+  width: 992px;
+  height: 539px;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperLogin {
+  width: 502px;
+  height: 539px;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperForget {
+  width: 491px;
+  height: 323px;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperReset {
+  width: 501px;
+  height: 383px;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperVerify {
+  width: 501px;
+  height: 383px;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperLight {
+  background: $light-background2;
+  padding: 50px 56px;
+}
+.wrapperDark {
+  background: $dark-background2;
+  padding: 48px;
+}
+.lightHeader {
+  @extend .header3;
+  color: $light-body;
+}
+.darkHeader {
+  @extend .header3;
+  color: $dark-body;
+}
+.textLight {
+  @extend .body;
+  color: $light-body;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.textDark {
+  @extend .body;
+  color: $dark-body;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.social {
+  border: 0;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  padding: 0;
+}
+.signupLight {
+  @extend .bold-body;
+  color: $light-body;
+}
+.signupDark {
+  @extend .bold-body;
+  color: $dark-body;
+}
+
+.forgetLight {
+  @extend .small;
+  color: $light-body;
+}
+.forgetDark {
+  @extend .small;
+  color: $dark-body;
+}
+.wrapperLoginLink {
+  @extend .light-title;
+  color: $light-body;
+}
+.wrapperLoginLinkDark {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  color: $dark-body;
+}
+.LoginLink {
+  text-decoration: underline;
+  @extend .bold-title;
+  color: $light-body;
+}
+.LoginLinkDark {
+  text-decoration: underline;
+  @extend .bold-title;
+  color: $dark-body;
+}
+.wrapperRuleLight {
+  @extend .light-title;
+  color: $light-body;
+}
+.wrapperRuleDark {
+  @extend .light-title;
+  color: $dark-body;
+}
+.ruleLight {
+  @extend .bold-title;
+  color: $light-body;
+  text-decoration: underline;
+}
+.ruleDark {
+  @extend .bold-title;
+  color: $dark-body;
+  text-decoration: underline;
+}
+.lightWrapperForgetContent {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #3d3c56;
+}
+.darkWrapperForgetContent {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #f2f2f8;
+}
+.lightForgetContent {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  text-align: center;
+  color: #3d3c56;
+  text-decoration: underline;
+  font-weight: 800;
+}
+.darkForgetContent {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  text-align: center;
+  color: #f2f2f8;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.wrapperLogo {
+  width: 75px;
+  height: 75px;
+}
+.orLight {
+  font-weight: 500;
+  font-size: 11px;
+  color: #6e7191;
+  padding-top: 2px;
+}
+.orDark {
+  font-weight: 500;
+  font-size: 11px;
+  color: #f2f2f8;
+  padding-top: 2px;
+}
+.masterWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+.button {
+  background-color: $focused;
+  color: $light-background;
+  width: 100%;
+  height: 45px;
+  @extend .button;
+  border-radius: 8px;
+  border: 0;
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+.wrapperSubmit {
+  display: flex;
+  padding-left: 68px;
+  padding-right: 38px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapperSignup {
+    width: 98%;
+    height: auto;
+  }
+  .masterWrapper {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapperLogin {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+  }
+  .wrapperSignup {
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .wrapperLight {
+    background: $light-background2;
+    padding: 16px;
+  }
+  .wrapperDark {
+    background: $dark-background2;
+    padding: 16px;
+  }
+  .wrapperSubmit {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+  }
+  .wrapperForget {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .wrapperReset {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .wrapperVerify {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,65 @@
+@import "../theme/index";
+.wrapper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.wrapperLight {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  cursor: pointer;
+  background-color: $light-background2;
+  @extend .body;
+}
+.wrapperDark {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  cursor: pointer;
+  background-color: $dark-background2;
+  color: #f2f2f8;
+  @extend .body;
+}
+.text {
+  padding-left: 8px;
+  padding-right: 16px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.lightActive {
+  height: 35px !important;
+  background-color: $light-background;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $focused;
+  }
+  @extend .bold-body;
+}
+.darkActive {
+  height: 35px !important;
+  background-color: $dark-background;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $focused;
+  }
+  @extend .bold-body;
+}
+.verify {
+  position: absolute;
+  right: 16px;
+}

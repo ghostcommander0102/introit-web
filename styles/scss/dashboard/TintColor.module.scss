@@ -1,0 +1,31 @@
+@import "../theme/index";
+.wrapper {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  left: -76.5px;
+  top: 38px;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  &:hover {
+    background-color: transparent;
+    border: 0;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+  }
+}
+.lightText {
+  @extend .header3;
+  color: $light-body;
+  margin-bottom: 0;
+}
+.darkText {
+  @extend .header3;
+  color: $dark-body;
+  margin-bottom: 0;
+}

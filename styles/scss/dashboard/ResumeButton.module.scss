@@ -1,0 +1,70 @@
+@import "../theme/index";
+.wrapper {
+  position: absolute;
+  bottom: -1.7px;
+  right: 0;
+}
+.lightCancel {
+  background-color: $light-background2;
+  color: $light-body;
+  @extend .button;
+  width: 186px;
+  border: 0;
+  height: 45px;
+  &:focus {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+}
+.darkCancel {
+  background-color: $dark-background2;
+  color: $dark-body;
+  @extend .button;
+  width: 186px;
+  border: 0;
+  height: 45px;
+  &:focus {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+}
+.save {
+  background-color: $focused;
+  color: $light-background;
+  height: 45px;
+  @extend .button;
+  width: 186px;
+  border: 0;
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+  }
+  .save {
+    width: 50%;
+  }
+  .lightCancel {
+    width: 50%;
+  }
+  .darkCancel {
+    width: 50%;
+  }
+}

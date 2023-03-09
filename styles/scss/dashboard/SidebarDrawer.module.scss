@@ -1,0 +1,135 @@
+@import "../theme/index";
+.sidebar {
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 999;
+  width: 211px;
+  padding-top: 16px;
+}
+.sidebarMini {
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 999;
+  width: 54px;
+  padding-top: 16px;
+}
+
+.lightName {
+  @extend .bold-body;
+  margin-bottom: 0;
+  color: $light-body;
+}
+.darkName {
+  color: $dark-body;
+  margin-bottom: 0;
+  @extend .bold-body;
+}
+.lightJobTitle {
+  color: $light-body;
+  white-space: nowrap;
+  margin: 0;
+  padding-top: 3px;
+  @extend .small;
+}
+.darkJobTitle {
+  color: $dark-body;
+  white-space: nowrap;
+  margin: 0;
+  padding-top: 3px;
+  @extend .small;
+}
+
+.tab {
+  height: 40px;
+  display: flex;
+}
+
+.buttonClose {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.lightText {
+  color: $light-body;
+  @extend .body;
+  margin-bottom: 0;
+}
+.darkText {
+  color: $dark-body;
+  @extend .body;
+  margin-bottom: 0;
+}
+.activeText {
+  @extend .bold-body;
+}
+
+.lightSubTab {
+  padding-left: 32px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: $light-body;
+  a {
+    @extend .body;
+  }
+}
+.darkSubTab {
+  padding-left: 32px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: $dark-body;
+  a {
+    @extend .body;
+  }
+}
+.seprator {
+  width: 2px;
+  height: 36px;
+  background-color: $light-background2;
+}
+.lightActiveSubTab {
+  background-color: $light-background2;
+  color: $light-body;
+  height: 35px;
+  position: relative;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $focused;
+  }
+
+  a {
+    @extend .bold-body;
+  }
+}
+
+.darkActiveSubTab {
+  background-color: $dark-background2;
+  color: $dark-body;
+  height: 35px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $focused;
+  }
+
+  a {
+    @extend .bold-body;
+  }
+}

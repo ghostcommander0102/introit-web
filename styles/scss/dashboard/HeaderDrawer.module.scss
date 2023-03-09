@@ -1,0 +1,11 @@
+@import "../theme/index";
+.lightSeprator {
+  background-color: $light-background2;
+  height: 42px;
+  width: 2px;
+}
+.darkSeprator {
+  background-color: $dark-background2;
+  height: 42px;
+  width: 2px;
+}

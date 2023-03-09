@@ -1,0 +1,169 @@
+@import "../theme/index";
+.lightClose {
+  background-color: $light-background2;
+  border: 0;
+  border-radius: 30px 0px 16px;
+  position: absolute;
+  top: 0;
+  width: 45px;
+  left: 0px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  &:hover {
+    background-color: $light-background2;
+  }
+  &:focus {
+    background-color: $light-background2;
+  }
+}
+.darkClose {
+  background-color: $dark-background2;
+  border: 0;
+  border-radius: 30px 0px 16px;
+  position: absolute;
+  top: 0;
+  width: 45px;
+  left: 0px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  &:hover {
+    background-color: $dark-background2;
+  }
+  &:focus {
+    background-color: $dark-background2;
+  }
+}
+
+.mobileClose {
+  background-color: transparent;
+  border: 0;
+  border-radius: 30px 0px 16px;
+  position: absolute;
+  top: 0;
+  width: 45px;
+  left: 0px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  box-shadow: 0 0 0px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.lightLeft {
+  background-color: $light-background2;
+  color: $light-body;
+  height: 45px;
+  border: 0;
+  width: 207px;
+  border-radius: 8px 0px 0px 8px;
+  @extend .button;
+  &:focus {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+}
+
+.darkLeft {
+  background-color: $dark-background2;
+  color: $dark-body;
+  height: 45px;
+  width: 207px;
+  border-radius: 8px 0px 0px 8px;
+  border: 0;
+  @extend .button;
+  &:focus {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+}
+.lightRight {
+  background-color: $focused;
+  color: $light-background;
+  height: 45px;
+  border: 0;
+  width: 207px;
+  border-radius: 0px 8px 8px 0px;
+  @extend .button;
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+
+.darkRight {
+  background-color: $focused;
+  color: $dark-body;
+  height: 45px;
+  width: 207px;
+  border-radius: 0px 8px 8px 0px;
+  border: 0;
+  @extend .button;
+  &:focus {
+    background-color: $focused;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $focused;
+    color: $dark-body;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .lightClose {
+    border-radius: 0;
+  }
+  .closeDark {
+    border-radius: 0;
+  }
+  .wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .lightLeft {
+    width: 50%;
+    border-radius: 0;
+  }
+  .darkLeft {
+    width: 50%;
+    border-radius: 0;
+  }
+  .lightRight {
+    width: 50%;
+    border-radius: 0;
+  }
+  .darkRight {
+    width: 50%;
+    border-radius: 0;
+  }
+}

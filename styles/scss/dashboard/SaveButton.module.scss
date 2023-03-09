@@ -1,0 +1,37 @@
+@import "../theme/index";
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 186px;
+  z-index: 100;
+}
+.button {
+  width: 186px;
+  height: 45px;
+  background: $focused;
+  border-radius: 0px;
+  border: 0;
+  color: $light-background;
+  @extend .button;
+  &:hover {
+    background: $focused !important;
+    color: $light-background !important;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background !important;
+  }
+  &:disabled {
+    background: $focused;
+    color: $light-background !important;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+}

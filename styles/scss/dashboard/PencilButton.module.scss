@@ -1,0 +1,89 @@
+@import "../theme/index";
+.lightWrapper {
+  width: 20px;
+  padding: 0;
+  height: 20px;
+  background-color: $dark-border-col;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  &:hover {
+    background-color: $dark-border-col;
+  }
+  &:focus {
+    background-color: $dark-border-col;
+  }
+}
+.lightWrapperIsLight {
+  width: 20px;
+  padding: 0;
+  height: 20px;
+  background-color: $light-background;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  &:hover {
+    background-color: $light-background;
+  }
+  &:focus {
+    background-color: $light-background;
+  }
+}
+.darkWrapper {
+  width: 20px;
+  padding: 0;
+  height: 20px;
+  background-color: $light-background;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  &:hover {
+    background-color: $light-background;
+  }
+  &:focus {
+    background-color: $light-background;
+  }
+}
+.darkWrapper {
+  width: 20px;
+  padding: 0;
+  height: 20px;
+  background-color: $dark-border-col;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  &:hover {
+    background-color: $dark-border-col;
+  }
+  &:focus {
+    background-color: $dark-border-col;
+  }
+}
+
+.darkWrapperIsLight {
+  width: 20px;
+  padding: 0;
+  height: 20px;
+  background-color: $dark-background;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  &:hover {
+    background-color: $dark-background;
+  }
+  &:focus {
+    background-color: $dark-background;
+  }
+}

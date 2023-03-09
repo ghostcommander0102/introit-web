@@ -1,0 +1,51 @@
+@import "../theme/index";
+.fixedLight {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: #6e7191;
+  margin: 0;
+  white-space: nowrap;
+}
+.fixedDark {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: #f2f2f8;
+  margin: 0;
+  white-space: nowrap;
+}
+.variableLight {
+  font-style: bolder;
+  font-weight: 600;
+  font-size: 24px;
+  color: #6e7191;
+  padding-left: 5px;
+  white-space: nowrap;
+}
+.variableDark {
+  font-style: bolder;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f2f2f8;
+  padding-left: 5px;
+  white-space: nowrap;
+}
+.button {
+  border: 0;
+  background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .fixedLight {
+    font-size: 18px;
+  }
+  .variableLight {
+    font-size: 18px;
+  }
+  .fixedDark {
+    font-size: 18px;
+  }
+  .variableDark {
+    font-size: 18px;
+  }
+}

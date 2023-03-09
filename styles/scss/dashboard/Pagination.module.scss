@@ -1,0 +1,27 @@
+@import "../theme/index";
+.leftButton {
+  background: transparent !important;
+  border: 0;
+  box-shadow: 0 0 0px;
+}
+.rightButton {
+  background: transparent !important;
+  border: 0;
+  box-shadow: 0 0 0px;
+}
+.lightPage {
+  @extend .small;
+  color: $light-body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.darkPage {
+  @extend .small;
+  color: $dark-body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}

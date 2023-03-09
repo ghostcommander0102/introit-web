@@ -1,0 +1,30 @@
+@import "../theme/index";
+.dividerLight {
+  color: $light-body;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  line-height: 37px;
+  @extend .header3;
+}
+.dividerDark {
+  color: $dark-body;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  @extend .header3;
+}
+.count {
+  @extend .bold-title;
+  color: $light-body;
+  padding-left: 5px;
+  margin-top: 4px;
+}
+@media only screen and (max-width: 768px) {
+  .dividerLight {
+    font-size: 18px;
+  }
+  .dividerDark {
+    font-size: 18px;
+  }
+}

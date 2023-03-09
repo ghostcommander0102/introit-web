@@ -1,0 +1,47 @@
+@import "../theme/index";
+.lightButton {
+  background: $light-background2;
+  color: $light-border-col;
+  border: 0;
+  border-radius: 8px;
+  width: 195px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .button;
+  svg {
+    position: relative;
+  }
+  &:hover {
+    background: $light-background2;
+    color: $light-border-col;
+  }
+  &:focus {
+    background: $light-background2;
+    color: $light-border-col;
+  }
+}
+.darkButton {
+  background: $dark-background2;
+  color: $dark-border-col;
+  border: 0;
+  border-radius: 8px;
+  width: 195px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .button;
+  svg {
+    position: relative;
+  }
+  &:hover {
+    background: $dark-background2;
+    color: $dark-border-col;
+  }
+  &:focus {
+    background: $dark-background2;
+    color: $dark-border-col;
+  }
+}

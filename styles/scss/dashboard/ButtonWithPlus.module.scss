@@ -1,0 +1,49 @@
+@import "../theme/index";
+.lightButton {
+  font-weight: 500;
+  font-size: 16px;
+  color: #6e7191;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #6e7191;
+    border: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+  &:focus {
+    color: #6e7191;
+    border: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+}
+.darkButton {
+  font-weight: 500;
+  font-size: 16px;
+  color: #f2f2f8;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #f2f2f8;
+    border: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+  &:focus {
+    color: #f2f2f8;
+    border: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+}

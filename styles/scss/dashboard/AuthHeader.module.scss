@@ -1,0 +1,41 @@
+@import "../theme/index";
+
+.wrapper {
+}
+.lightButton {
+  z-index: 9999;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: $light-background2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50%;
+  &:focus {
+    background-color: $light-background2;
+  }
+  &:hover {
+    background-color: $light-background2;
+  }
+}
+
+.darkButton {
+  z-index: 9999;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: $dark-background2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50%;
+  &:focus {
+    background-color: $dark-background2;
+  }
+  &:hover {
+    background-color: $dark-background2;
+  }
+}

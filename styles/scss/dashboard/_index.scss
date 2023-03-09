@@ -1,0 +1,2550 @@
+@import "../theme/index";
+.auth-layout {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// after add antd
+
+.ant-picker-header-prev-btn {
+  display: none;
+}
+.ant-picker-header-next-btn {
+  display: none;
+}
+
+.container-custome {
+  .ant-form-item-control {
+    width: 100%;
+  }
+}
+.wrapper-check {
+  right: 0;
+  top: -4px;
+  z-index: 2;
+}
+.auth-main {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+.light-mode {
+  background-color: $light-background;
+  //***************************
+  // Start Auth
+  //***************************
+  .auth-layout {
+    background-color: $light-background;
+  }
+  //***************************
+  // End Auth
+  //***************************
+
+  //***************************
+  // Start Custome
+  //***************************
+  .ant-input-affix-wrapper-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .ant-input-status-error {
+    border: 1px solid $danger !important;
+  }
+  .change-style-validation {
+    .ant-input-affix-wrapper-status-error {
+      border: 1px solid $danger !important;
+      background-color: #f2f2f8 !important;
+    }
+  }
+
+  //***************************
+  // End Custome
+  //***************************
+
+  //***************************
+  // Start Resume Row
+  //***************************
+  .wrapper-row-resume {
+    height: 420px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $light-border-col;
+    }
+    .row-item:first-child {
+      .ant-col {
+        border-top-left-radius: 16px;
+      }
+    }
+    .row-item:last-child {
+      .ant-col {
+        border-bottom-left-radius: 16px;
+      }
+    }
+    textarea {
+      border-radius: 0 !important;
+      border-top-left-radius: 16px !important;
+      border-bottom-left-radius: 16px !important;
+    }
+  }
+
+  //***************************
+  // End Resume Row
+  //***************************
+
+  //***************************
+  // Start DatePicker
+  //***************************
+  .ant-picker-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .custome-datepicker {
+    .ant-picker-month-btn {
+      color: #6e7191 !important;
+    }
+    .ant-picker-year-btn {
+      color: #6e7191 !important;
+    }
+    .ant-picker-panel-container {
+      box-shadow: 0 0 0;
+      border: 1px solid $light-border;
+      border-radius: 8px;
+    }
+    .ant-picker-cell-selected {
+      .ant-picker-cell-inner {
+        background-color: $focused;
+        border-radius: 8px;
+      }
+    }
+    .ant-picker-cell {
+      color: rgba(0, 0, 0, 0.25) !important;
+    }
+    .ant-picker-cell-in-view {
+      color: #6e7191 !important;
+    }
+    table {
+      thead {
+        tr {
+          th {
+            font-weight: 600;
+            font-size: 13px;
+            color: #6e7191;
+          }
+        }
+      }
+    }
+    .ant-picker-header {
+      border-bottom: 0;
+    }
+    .ant-picker-footer {
+      border-top: 0;
+    }
+  }
+  .ant-picker-status-error {
+    border: 1px solid $danger;
+  }
+  //***************************
+  // End DatePicker
+  //***************************
+
+  //***************************
+  // Start Select
+  //***************************
+  .rc-virtual-list-scrollbar {
+    background: #f2f2f8;
+    .rc-virtual-list-scrollbar-thumb {
+      background-color: #c6c2de !important;
+    }
+  }
+  .select-border {
+    .ant-select-selector {
+      border: 1px solid #c6c2de !important;
+    }
+  }
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background-color: $light-background2 !important;
+    @extend .body;
+    color: $light-body;
+  }
+  .ant-select-item-option-disabled {
+    opacity: 0.3;
+  }
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .ant-select-item-option-content {
+    text-transform: capitalize;
+    color: $light-body;
+  }
+  .ant-select-item-option-selected {
+    background-color: white !important;
+    color: white !important;
+  }
+  .ant-select-dropdown {
+    border-radius: 14px !important;
+    padding: 0 !important;
+    border: 1px solid $light-border;
+    box-shadow: 0 0 0;
+    background-color: $light-background;
+  }
+  .ant-select-selector {
+    background: $light-background2 !important;
+    height: 45px !important;
+    border-radius: 8px !important;
+    width: 100%;
+    border: 0 !important;
+    color: $light-body !important;
+    @extend .body;
+    text-transform: capitalize;
+    .ant-select-selection-placeholder {
+      position: relative;
+      top: 5px;
+      color: $light-body !important;
+    }
+    .ant-select-selection-item {
+      position: relative;
+      top: 5px;
+    }
+    .ant-select-selection-search-input {
+      position: relative;
+      top: 3px;
+    }
+  }
+  .ant-select.custome-wrapper {
+    .ant-select-selector {
+      background: $light-background !important;
+    }
+  }
+
+  .ant-input-affix-wrapper-status-error {
+    border: 1px solid $danger !important;
+  }
+  .ant-select-status-error {
+    .ant-select-selector {
+      border: 1px solid $danger !important;
+    }
+  }
+  //***************************
+  // End Select
+  //***************************
+
+  //***************************
+  // Start Filter Select
+  //***************************
+
+  .filter-select.ant-select {
+    .ant-select-selector {
+      background: $light-background2 !important;
+      height: 27px !important;
+      border-radius: 8px !important;
+      width: 100%;
+      border: 0 !important;
+      color: $light-body !important;
+      @extend .body;
+      text-transform: capitalize;
+      .ant-select-selection-placeholder {
+        position: relative;
+        top: -2px;
+        color: $light-body !important;
+      }
+      .ant-select-selection-item {
+        position: relative;
+        top: 5px;
+      }
+      .ant-select-selection-search-input {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .ant-select-selector {
+      .ant-select-selection-item {
+        top: -2px !important;
+      }
+    }
+  }
+
+  //***************************
+  // End Filter Select
+  //***************************
+
+  //***************************
+  // Start Phone
+  //***************************
+  .react-tel-input {
+    z-index: 99 !important;
+    .flag-dropdown {
+      .open {
+        .arrow {
+          background-image: url("/assets/images/svgs/arrow-up-icon.svg");
+          width: 20px;
+          height: 20px;
+          background-position: center;
+          position: absolute;
+          transform: translateY(-50%);
+          background-repeat: no-repeat;
+          right: 5px;
+          border: 0;
+        }
+      }
+    }
+  }
+  .react-tel-input .flag-dropdown {
+    background-color: $light-background2;
+    border: 0;
+    border-radius: 8px !important;
+    height: 90%;
+    top: 2px;
+    left: 2px;
+    .highlight {
+      background-color: $focused !important;
+    }
+  }
+  .react-tel-input .form-control {
+    width: 100%;
+    height: 45px;
+    background-color: $light-background2;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 60px;
+    color: $light-body;
+    @extend .body;
+    &::placeholder {
+      color: $light-body;
+    }
+    &:focus {
+      border: 2px solid $focused !important;
+      box-shadow: 0 0 0;
+    }
+  }
+  .react-tel-input .selected-flag {
+    border-radius: 8px;
+  }
+  .react-tel-input .flag-dropdown.open .selected-flag {
+    border-radius: 8px;
+  }
+  .react-tel-input .selected-flag:hover,
+  .react-tel-input .selected-flag:focus {
+    background-color: $light-background2;
+  }
+  .react-tel-input .flag-dropdown.open .selected-flag {
+    background-color: $light-background2;
+  }
+  .react-tel-input .country-list {
+    border-radius: 8px !important;
+    padding-bottom: 10px;
+    border: 1px solid $light-border;
+    background-color: $light-background;
+    text-align: center;
+    box-shadow: 0 0 0 !important;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $light-background2;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $light-border-col;
+    }
+  }
+  .react-tel-input .country-list .country:hover {
+    background-color: $light-background2;
+  }
+
+  .react-tel-input .selected-flag .arrow {
+    background-image: url("/assets/images/svgs/arrow-down-icon.svg");
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    right: 5px;
+    border: 0;
+  }
+  .react-tel-input .selected-flag .arrow.up {
+    border: 0;
+  }
+  .react-tel-input .country-list .country.highlight {
+    background-color: inherit;
+  }
+  //***************************
+  // End Phone
+  //***************************
+
+  //***************************
+  // Start Slider
+  //***************************
+  .slider-croper {
+    .ant-slider-rail {
+      height: 1px !important;
+      border-top: dashed 1px $light-border !important;
+      top: 5px;
+    }
+    .ant-slider-dot {
+      background: $light-border;
+      border: 0;
+      width: 9px;
+      height: 9px;
+    }
+    .ant-slider-handle {
+      background: $focused;
+      border: 0;
+      z-index: 2;
+    }
+    .ant-slider-mark-text {
+      color: $light-border;
+    }
+  }
+  .slider-vertical-croper {
+    .ant-slider-rail {
+      height: 100% !important;
+      width: 1px;
+      border: dashed 1px $light-border !important;
+      top: 5px;
+    }
+    .ant-slider-handle {
+      background: $focused;
+      border: 0;
+      z-index: 2;
+    }
+  }
+  //***************************
+  // End Slider
+  //***************************
+
+  //***************************
+  // Start Message
+  //***************************
+  .ant-message {
+    z-index: 99999;
+    .ant-message-notice {
+      display: flex;
+      justify-content: flex-end;
+      .ant-message-notice-content {
+        background-color: #fff;
+        color: #6e7191;
+      }
+    }
+  }
+
+  //***************************
+  // End Message
+  //***************************
+
+  //***************************
+  // Start Modal
+  //***************************
+  .ant-modal-mask {
+    background: rgba(35, 34, 48, 0.76);
+    backdrop-filter: blur(8px);
+  }
+  .ant-modal {
+    .ant-modal-content {
+      border-radius: 28px !important;
+      box-shadow: 0 0 0;
+      border: 0 !important;
+      background-color: $light-background;
+    }
+  }
+  .ant-modal.member-modal {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 24px 2px;
+      }
+      border-radius: 0 !important;
+      box-shadow: 0 0 0;
+      border: 0 !important;
+      background-color: $light-background2;
+    }
+  }
+  //***************************
+  // End Modal
+  //***************************
+
+  //***************************
+  // Start SocialInput
+  //***************************
+  .social-wrapper {
+    .ant-select-selector {
+      .ant-select-selection-item {
+        position: relative;
+        top: 0px !important;
+      }
+      height: 36.6px !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+        .ant-select-customize-input
+      )
+      .ant-select-selector {
+      border: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+  }
+  .dropdown-social {
+    width: 100px !important;
+  }
+  //***************************
+  // End SocialInput
+  //***************************
+
+  //***************************
+  // Start Sidebar Mini
+  //***************************
+  .activate-mini {
+    padding-top: 35px !important;
+    width: 275px !important;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255);
+    height: 100vh;
+    box-shadow: 0 0 10px;
+  }
+  //***************************
+  // End Sidebar Mini
+  //***************************
+
+  //***************************
+  // Start SearchHeader
+  //***************************
+  .search-bar-header {
+    .ant-input-affix-wrapper {
+      background-color: #f2f2f8;
+      border-radius: 30px;
+      height: 44px;
+      width: 327px;
+      border: 0;
+      input {
+        background-color: #f2f2f8;
+        padding-left: 10px;
+        color: #6e7191;
+        font-weight: 400;
+        &::placeholder {
+          font-size: 16px;
+          color: #6e7191;
+        }
+        &:focus {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+    .ant-input-affix-wrapper-focused {
+      border: 2px solid #c6c2de !important;
+    }
+    .ant-input-affix-wrapper {
+      &:hover {
+        border-color: #c6c2de !important;
+      }
+    }
+  }
+  //***************************
+  // End SearchHeader
+  //***************************
+
+  //***************************
+  // Start DropDown
+  //***************************
+  .ant-dropdown-menu {
+    padding: 8px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid $light-border;
+    text-align: center;
+    width: 160px;
+    height: 112px;
+    .ant-dropdown-menu-item {
+      height: 24px;
+      background-color: $light-background;
+      &:hover {
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 3px;
+          background-color: $focused;
+        }
+        background-color: $light-background2;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .ant-dropdown-menu-item,
+  .ant-dropdown-menu-submenu-title {
+    padding: 1px 1px !important;
+  }
+  //***************************
+  // End DropDown
+  //***************************
+
+  //***************************
+  // Start CandiCard
+  //***************************
+  .wrapper-candi-card {
+    &:hover {
+      .button-hoverable-custome {
+        background-color: $focused !important;
+        color: white !important;
+      }
+    }
+  }
+  //***************************
+  // End CandiCard
+  //***************************
+
+  //***************************
+  // Start Progress Resume
+  //***************************
+  .progress-resume {
+    .ant-progress {
+      .ant-progress-inner {
+        overflow: visible;
+        border-radius: 3px;
+        .ant-progress-bg {
+          border-radius: 3px;
+          &::after {
+            content: "";
+            background-color: $light-background;
+            position: absolute;
+            right: -3px;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            border: 4px solid $focused;
+            top: -8px;
+          }
+        }
+      }
+    }
+  }
+  //***************************
+  // End  Progress Resume
+  //***************************
+
+  //***************************
+  // Start  Progress Password
+  //***************************
+  .progress-password {
+    .ant-progress-inner {
+      border-radius: 0;
+      .ant-progress-bg {
+        border-radius: 0;
+      }
+    }
+  }
+  //***************************
+  // End  Progress Password
+  //***************************
+
+  //***************************
+  // Start RangePicker
+  //***************************
+  .ant-picker {
+    width: 100%;
+    background-color: $light-background2;
+    height: 45px;
+    border-radius: 8px;
+    border: 0;
+    input {
+      color: $light-body !important;
+      @extend .body;
+      &::placeholder {
+        color: $light-body !important;
+      }
+    }
+  }
+  .ant-picker-range-wrapper {
+    justify-content: center;
+  }
+  .ant-picker-panel-container {
+    margin-left: 0 !important;
+  }
+  .ant-picker-range-arrow {
+    display: none;
+  }
+  .ant-picker-status-error {
+    border: 1px solid $danger;
+    background-color: $light-background2;
+  }
+  .present-range .ant-picker-range-separator ~ .ant-picker-input {
+    &::after {
+      width: 100px;
+      height: 30px;
+      background-color: $light-background2;
+      color: $light-body;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      content: "Present";
+      position: absolute;
+      left: 0;
+      cursor: not-allowed;
+    }
+  }
+  .ant-picker-header-view {
+    color: $light-body;
+  }
+  //***************************
+  // End RangePicker
+  //***************************
+
+  //***************************
+  // Start Spinner
+  //***************************
+  .ant-spin {
+    .ant-spin-dot-item {
+      background-color: white;
+      opacity: 1;
+    }
+  }
+
+  //***************************
+  // End Spinner
+  //***************************
+
+  //***************************
+  // Start Menu
+  //***************************
+  .menu-sidebar-active.ant-menu-submenu-popup {
+    background-color: $light-background;
+    box-shadow: 0 0 0px;
+  }
+  .menu-sidebar-active {
+    overflow: hidden;
+    background-color: $light-background2;
+    .ant-menu-submenu-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 35px;
+      &::before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $focused;
+      }
+    }
+    .ant-menu {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 2px solid $light-border;
+      background-color: $light-background2;
+      .ant-menu-item {
+        background-color: $light-background;
+        height: 35px;
+        padding-left: 8px;
+        padding-right: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $light-body !important;
+        a {
+          color: $light-body;
+
+          &:hover {
+            color: $light-body !important;
+          }
+        }
+      }
+    }
+  }
+  .menu-sidebar {
+    border-right: 0;
+    .ant-menu {
+      background-color: $light-background;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 2px solid $light-border;
+      background-color: $light-background2;
+      .ant-menu-item {
+        padding-left: 3px;
+        background-color: $light-background;
+        height: 35px;
+        padding-right: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $light-body !important;
+        a {
+          color: $light-body;
+
+          &:hover {
+            color: $light-body !important;
+          }
+        }
+      }
+    }
+  }
+  //***************************
+  // End Menu
+  //***************************
+
+  //***************************
+  // Start Carousel
+  //***************************
+  .owl-carousel {
+    .owl-nav {
+      display: block !important;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      .owl-prev {
+        &::before {
+          z-index: 999;
+          content: "";
+          left: 0;
+          position: absolute;
+          background-image: url("/assets/images/svgs/prev-carousel-icon.svg");
+          width: 20px;
+          height: 15px;
+        }
+      }
+      .owl-next {
+        &::after {
+          z-index: 999;
+          content: "";
+          right: 0px;
+          position: absolute;
+          background-image: url("/assets/images/svgs/next-carousel-icon.svg");
+          width: 22px;
+          height: 15px;
+        }
+      }
+    }
+  }
+  //***************************
+  // End Carousel
+  //***************************
+
+  //***************************
+  // Start Tab Resume
+  //***************************
+  .wrapper-tab-resume {
+    height: 600px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c6c2de;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+
+    .tabs {
+      height: 900px;
+    }
+  }
+  //***************************
+  // End Tab Resume
+  //***************************
+
+  //***************************
+  // Start Number Item
+  //***************************
+  .ant-input-number {
+    &:hover {
+      border-width: 0;
+    }
+    input {
+      padding-top: 10px;
+      padding-left: 0;
+    }
+  }
+  .ant-input-number-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+    input {
+      padding-top: 7px;
+      padding-left: 0;
+    }
+  }
+  //***************************
+  // End Number Item
+  //***************************
+
+  //***************************
+  // Start Wrapper Social
+  //***************************
+  .wrapper-social-input {
+    input {
+      width: 80%;
+    }
+    .ant-select {
+      .ant-select-selector {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+  }
+  //***************************
+  // End Wrapper Social
+  //***************************
+
+  //***************************
+  // Start Perpage
+  //***************************
+  .wrapper-perpage {
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+        .ant-select-customize-input
+      )
+      .ant-select-selector {
+      border: 0 !important;
+      box-shadow: 0 0 0px !important;
+    }
+  }
+  //***************************
+  // End Perpage
+  //***************************
+
+  //***************************
+  // Start Drawer
+  //***************************
+  .mobile-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .ant-drawer-content-wrapper {
+      height: 70px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $light-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  .global-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .ant-drawer-content-wrapper {
+      height: 226px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $light-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  .user-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .ant-drawer-content-wrapper {
+      height: 50px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $light-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  //***************************
+  // End Drawer
+  //***************************
+
+  //***************************
+  // Start Header Drawer
+  //***************************
+
+  .header-drawer-mobile {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76);
+      backdrop-filter: blur(8px);
+    }
+    .ant-drawer-content-wrapper {
+      height: 68px !important;
+      background-color: $light-background;
+      .ant-drawer-content {
+        background-color: $light-background;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+
+  //***************************
+  // End Header Drawer
+  //***************************
+
+  //***************************
+  // Start Segmented
+  //***************************
+  .segmented-item {
+    width: 100%;
+    background-color: #f2f2f8;
+    border-radius: 8px;
+    padding: 10px;
+    .ant-segmented-item {
+      width: 180px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.833333px;
+      color: #6e7191;
+    }
+    .ant-segmented-group {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ant-segmented-item-selected {
+      background: $focused;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.833333px;
+      color: #f2f2f8 !important;
+    }
+    &:hover {
+      background-color: #f2f2f8 !important;
+    }
+  }
+  //***************************
+  //  End Segmented
+  //***************************
+
+  //***************************
+  //  Start Avatar Progress
+  //***************************
+  .avatar-progress {
+    .ant-progress-inner {
+      width: 35px !important;
+      height: 35px !important;
+      background-color: #e5e5f1;
+    }
+    .ant-progress-text {
+      top: 1px !important;
+      left: 2px !important;
+      transform: translate(-9%, -40%);
+    }
+  }
+  .avatar-progress-prof {
+    .ant-progress-inner {
+      width: 70px !important;
+      height: 70px !important;
+    }
+    .ant-progress-text {
+      width: 62.5px;
+      height: 62.5px;
+      top: 1px !important;
+      left: 2px !important;
+      transform: translate(3.5%, 4%);
+    }
+  }
+  //***************************
+  //  End Avatar Progress
+  //***************************
+
+  //***************************
+  //  Start PopUp
+  //***************************
+
+  .ant-popover {
+    .ant-popover-message-title {
+      @extend .small;
+      color: $light-body;
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+    .ant-popover-buttons {
+      .ant-btn:nth-child(1) {
+        background-color: $light-background2;
+        color: $light-body;
+        @extend .small;
+        border: 0;
+        border-radius: 8px;
+        text-transform: capitalize;
+      }
+      .ant-btn:nth-child(2) {
+        background-color: $focused;
+        color: $dark-body;
+        @extend .small;
+        border: 0;
+        border-radius: 8px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  //***************************
+  //  End PopUp
+  //***************************
+
+  //***************************
+  //  Start Cv Select
+  //***************************
+  .cvs-select {
+    background-color: #ffffff;
+    border-radius: 8px;
+    .ant-select-selector {
+      background-color: #ffffff !important;
+    }
+  }
+  //***************************
+  //  End Cv Select
+  //***************************
+
+  //***************************
+  //  Start Cover Letter
+  //***************************
+
+  .cover-letter {
+    textarea {
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $light-border-col;
+      }
+    }
+  }
+
+  //***************************
+  //  End Cover Letter
+  //***************************
+
+  //***************************
+  //  Start Resume Tab
+  //***************************
+  .wrapper-tabs {
+    .ant-tabs-nav {
+      &::before {
+        border: 0;
+      }
+    }
+    .ant-tabs-tab {
+      @extend .small;
+      color: $light-border-col;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: $focused;
+    }
+    .ant-tabs-ink-bar {
+      background-color: transparent;
+    }
+  }
+  //***************************
+  //  End Resume Tab
+  //***************************
+}
+
+.dark-mode {
+  background-color: $dark-background;
+  //***************************
+  // Start Auth
+  //***************************
+  .auth-layout {
+    background-color: $dark-background;
+  }
+  //***************************
+  // End Auth
+  //***************************
+  //***************************
+  // Start Custome
+  //***************************
+  .ant-input-affix-wrapper-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .ant-input-status-error {
+    border: 1px solid $danger !important;
+  }
+  .change-style-validation {
+    .ant-input-affix-wrapper-status-error {
+      border: 1px solid $danger !important;
+      background-color: #f2f2f8 !important;
+    }
+  }
+
+  //***************************
+  // End Custome
+  //***************************
+
+  //***************************
+  // Start Resume Row
+  //***************************
+  .wrapper-row-resume {
+    height: 420px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $dark-border-col;
+    }
+    .row-item:first-child {
+      .ant-col {
+        border-top-left-radius: 16px;
+      }
+    }
+    .row-item:last-child {
+      .ant-col {
+        border-bottom-left-radius: 16px;
+      }
+    }
+    textarea {
+      border-radius: 0 !important;
+      border-top-left-radius: 16px !important;
+      border-bottom-left-radius: 16px !important;
+    }
+  }
+
+  //***************************
+  // End Resume Row
+  //***************************
+
+  //***************************
+  // Start DatePicker
+  //***************************
+  .ant-picker-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .custome-datepicker {
+    .ant-picker-month-btn {
+      color: #f2f2f8 !important;
+    }
+    .ant-picker-year-btn {
+      color: #f2f2f8 !important;
+    }
+    .ant-picker-panel {
+      background: $dark-background2;
+      border: 0;
+    }
+    .ant-picker-panel-container {
+      box-shadow: 0 0 0;
+      border: 1px solid $dark-border;
+      border-radius: 8px;
+    }
+    .ant-picker-cell-selected {
+      .ant-picker-cell-inner {
+        background-color: $focused;
+        border-radius: 8px;
+      }
+    }
+    .ant-picker-cell {
+      color: #f2f2f8 !important;
+      &:hover {
+        .ant-picker-cell-inner {
+          color: #56566f;
+        }
+      }
+    }
+    .ant-picker-cell-in-view {
+      color: #f2f2f8;
+      &:hover {
+        color: #6e7191 !important;
+      }
+    }
+    .ant-picker-cell-in-range {
+      color: #232230 !important;
+    }
+
+    table {
+      thead {
+        tr {
+          th {
+            font-weight: 600;
+            font-size: 13px;
+            color: #f2f2f8;
+          }
+        }
+      }
+    }
+    .ant-picker-header {
+      border-bottom: 0;
+    }
+    .ant-picker-footer {
+      border-top: 0;
+    }
+  }
+  .ant-picker-status-error {
+    border: 1px solid $danger !important;
+  }
+  .ant-picker-cell-disabled {
+    .ant-picker-cell-inner {
+      cursor: not-allowed !important;
+    }
+  }
+  //***************************
+  // End DatePicker
+  //***************************
+
+  //***************************
+  // Start Select
+  //***************************
+  .rc-virtual-list-scrollbar {
+    background: #292a3a;
+    .rc-virtual-list-scrollbar-thumb {
+      background-color: #56566f !important;
+    }
+  }
+  .select-border {
+    .ant-select-selector {
+      border: 1px solid #56566f !important;
+    }
+  }
+
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background-color: $dark-background2 !important;
+    @extend .body;
+    color: $dark-body;
+  }
+  .ant-select-item-option-content {
+    text-transform: capitalize;
+    color: $dark-body;
+  }
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+  }
+  .ant-select-item-option-selected {
+    background-color: #2e3042 !important;
+    color: white !important;
+  }
+  .ant-select-dropdown {
+    border-radius: 14px !important;
+    padding: 0 !important;
+    border: 1px solid $dark-border;
+    box-shadow: 0 0 0;
+    background-color: $dark-background;
+  }
+  .ant-empty-description {
+    color: #f2f2f8 !important;
+  }
+  .ant-select-selector {
+    background: $dark-background2 !important;
+    height: 45px !important;
+    border-radius: 8px !important;
+    width: 100%;
+    border: 0 !important;
+    color: $dark-body !important;
+    text-transform: capitalize;
+    @extend .body;
+    .ant-select-selection-placeholder {
+      position: relative;
+      top: 5px;
+      color: $dark-body !important;
+    }
+    .ant-select-selection-item {
+      position: relative;
+      top: 5px;
+    }
+    .ant-select-selection-search-input {
+      position: relative;
+      top: 3px;
+    }
+  }
+  .ant-select.custome-wrapper {
+    .ant-select-selector {
+      background: $dark-background !important;
+    }
+  }
+  .ant-input-affix-wrapper-status-error {
+    border: 1px solid $danger !important;
+  }
+  .ant-select-status-error {
+    .ant-select-selector {
+      border: 1px solid $danger !important;
+    }
+  }
+  //***************************
+  // End Select
+  //***************************
+
+  //***************************
+  // Start Filter Select
+  //***************************
+
+  .filter-select.ant-select {
+    .ant-select-selector {
+      background: $dark-background2 !important;
+      height: 27px !important;
+      border-radius: 8px !important;
+      width: 100%;
+      border: 0 !important;
+      color: $dark-body !important;
+      @extend .body;
+      text-transform: capitalize;
+      .ant-select-selection-placeholder {
+        position: relative;
+        top: 5px;
+        color: $dark-body !important;
+      }
+      .ant-select-selection-item {
+        position: relative;
+        top: 5px;
+      }
+      .ant-select-selection-search-input {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .ant-select-selector {
+      .ant-select-selection-item {
+        top: -2px !important;
+      }
+    }
+  }
+
+  //***************************
+  // Start Phone
+  //***************************
+  .react-tel-input {
+    z-index: 99 !important;
+    .flag-dropdown {
+      .open {
+        .arrow {
+          background-image: url("/assets/images/svgs/dark/arrow-up-icon.svg");
+          width: 20px;
+          height: 20px;
+          background-position: center;
+          position: absolute;
+          transform: translateY(-50%);
+          background-repeat: no-repeat;
+          right: 5px;
+          border: 0;
+        }
+      }
+    }
+  }
+  .react-tel-input .country-list {
+    border: 1px solid $dark-border !important;
+    background-color: $dark-background !important;
+    box-shadow: 0 0 0 !important;
+    border-radius: 8px !important;
+    padding-bottom: 10px;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $dark-background2 !important;
+      border-radius: 8px !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $dark-border-col !important;
+      border-radius: 0px !important;
+    }
+    .country {
+      .country-name {
+        color: $dark-body;
+      }
+      .dial-code {
+        color: $dark-border-col !important;
+      }
+    }
+  }
+  .react-tel-input .country-list .country:hover {
+    background-color: $dark-background2 !important;
+  }
+  .react-tel-input .selected-flag {
+    border-radius: 8px;
+  }
+  .react-tel-input .form-control {
+    height: 45px;
+    background-color: $dark-background2 !important;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 60px;
+    width: 100%;
+    color: $dark-body !important;
+    @extend .body;
+    &::placeholder {
+      color: $dark-border-col !important;
+    }
+    &:focus {
+      border: 2px solid $focused !important;
+      box-shadow: 0 0 0;
+    }
+  }
+  .react-tel-input .flag-dropdown {
+    background-color: $dark-background2 !important;
+    border: 0;
+    border-radius: 8px !important;
+    height: 90%;
+    top: 2px;
+    left: 2px;
+    .highlight {
+      background-color: $focused !important;
+    }
+  }
+  .react-tel-input .flag-dropdown.open .selected-flag {
+    background-color: $dark-background2 !important;
+  }
+  .react-tel-input .selected-flag:hover,
+  .react-tel-input .selected-flag:focus {
+    background-color: $dark-background2 !important;
+  }
+  .react-tel-input .selected-flag .arrow {
+    background-image: url("/assets/images/svgs/dark/arrow-down-icon.svg");
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    right: 5px;
+    border: 0;
+  }
+  .react-tel-input .selected-flag .arrow.up {
+    border: 0;
+  }
+  //***************************
+  // End Phone
+  //***************************
+
+  //***************************
+  // Start Slider
+  //***************************
+  .slider-croper {
+    .ant-slider-rail {
+      height: 1px !important;
+      border-top: dashed 1px $dark-border !important;
+      top: 5px;
+      background-color: transparent;
+    }
+    .ant-slider-dot {
+      background: $dark-border;
+      border: 0;
+      width: 9px;
+      height: 9px;
+    }
+    .ant-slider-handle {
+      background: $focused;
+      border: 0;
+      z-index: 2;
+    }
+    .ant-slider-mark-text {
+      color: $dark-border;
+    }
+  }
+  .slider-vertical-croper {
+    .ant-slider-rail {
+      height: 100% !important;
+      width: 1px;
+      background-color: transparent;
+      border: dashed 1px $light-border !important;
+      top: 5px;
+    }
+    .ant-slider-handle {
+      background: $focused;
+      border: 0;
+      z-index: 2;
+    }
+  }
+  //***************************
+  // End Slider
+  //***************************
+
+  //***************************
+  // Start Message
+  //***************************
+  .ant-message {
+    .ant-message-notice {
+      display: flex;
+      justify-content: flex-end;
+      .ant-message-notice-content {
+        background-color: #232230;
+        color: #f2f2f8;
+      }
+    }
+  }
+
+  //***************************
+  // End Message
+  //***************************
+
+  //***************************
+  // Start Modal
+  //***************************
+  .ant-modal-mask {
+    background: rgba(35, 34, 48, 0.76);
+    backdrop-filter: blur(8px);
+  }
+  .ant-modal {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 24px 2px;
+      }
+      border-radius: 28px !important;
+      box-shadow: 0 0 0;
+      border: 0 !important;
+      background-color: $dark-background;
+    }
+  }
+  .ant-modal.member-modal {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 24px 2px;
+      }
+      border-radius: 0 !important;
+      box-shadow: 0 0 0;
+      border: 0 !important;
+      background-color: $dark-background2;
+    }
+  }
+  //***************************
+  // End Modal
+  //***************************
+
+  //***************************
+  // Start SocialInput
+  //***************************
+  .social-wrapper {
+    .ant-select-selector {
+      .ant-select-selection-item {
+        position: relative;
+        top: 0px !important;
+      }
+      height: 36.6px !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(
+        .ant-select-customize-input
+      )
+      .ant-select-selector {
+      border: 0 !important;
+      box-shadow: 0 0 0 !important;
+    }
+  }
+  .dropdown-social {
+    width: 100px !important;
+  }
+  //***************************
+  // End SocialInput
+  //***************************
+
+  //***************************
+  // Start Sidebar Mini
+  //***************************
+  .activate-mini {
+    padding-top: 35px !important;
+    width: 275px !important;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #232230;
+    height: 100vh;
+    box-shadow: 0 0 10px;
+  }
+  //***************************
+  // End Sidebar Mini
+  //***************************
+
+  //***************************
+  // Start SearchHeader
+  //***************************
+  .search-bar-header {
+    .ant-input-affix-wrapper {
+      background-color: #232230;
+      border-radius: 30px;
+      height: 44px;
+      width: 327px;
+      border: 0;
+      input {
+        background-color: #232230;
+        padding-left: 10px;
+        color: #f2f2f8;
+        font-weight: 400;
+        &::placeholder {
+          font-size: 16px;
+          color: #f2f2f8;
+        }
+        &:focus {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+    .ant-input-affix-wrapper-focused {
+      border: 2px solid #6e7191 !important;
+    }
+    .ant-input-affix-wrapper {
+      &:hover {
+        border-color: #6e7191 !important;
+      }
+    }
+  }
+  //***************************
+  // End SearchHeader
+  //***************************
+
+  //***************************
+  // Start DropDown
+  //***************************
+  .ant-dropdown-menu {
+    padding: 8px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid $dark-border;
+    text-align: center;
+    width: 160px;
+    height: 112px;
+    background-color: $dark-background;
+    .ant-dropdown-menu-item {
+      height: 24px;
+      background-color: $dark-background;
+      &:hover {
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 3px;
+          background-color: $focused;
+        }
+        background-color: $dark-background2;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .ant-dropdown-menu-item,
+  .ant-dropdown-menu-submenu-title {
+    padding: 1px 11px !important;
+  }
+  //***************************
+  // End DropDown
+  //***************************
+
+  //***************************
+  // Start CandiCard
+  //***************************
+  .wrapper-candi-card {
+    &:hover {
+      .button-hoverable-custome {
+        background-color: $focused !important;
+        color: white !important;
+      }
+    }
+  }
+  //***************************
+  // End CandiCard
+  //***************************
+
+  //***************************
+  // Start Progress Resume
+  //***************************
+  .progress-resume {
+    .ant-progress {
+      .ant-progress-inner {
+        overflow: visible;
+        border-radius: 3px;
+        .ant-progress-bg {
+          border-radius: 3px;
+          &::after {
+            content: "";
+            background-color: $dark-background;
+            position: absolute;
+            right: -3px;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            border: 4px solid $focused;
+            top: -8px;
+          }
+        }
+      }
+    }
+  }
+  //***************************
+  // End  Progress Resume
+  //***************************
+
+  //***************************
+  // Start RangePicker
+  //***************************
+  .ant-picker {
+    width: 100%;
+    background-color: $dark-background2 !important;
+    height: 45px;
+    border-radius: 8px;
+    border: 0;
+    input {
+      color: $dark-body !important;
+      @extend .body;
+      &::placeholder {
+        color: $dark-body !important;
+      }
+    }
+  }
+  .ant-picker-range-wrapper {
+    justify-content: center;
+  }
+  .ant-picker-panel-container {
+    margin-left: 0 !important;
+  }
+  .ant-picker-range-arrow {
+    display: none;
+  }
+  .ant-picker-status-error {
+    border: 1px solid $danger;
+    background-color: $dark-background2 !important;
+    &:hover {
+      background-color: $dark-background2 !important;
+    }
+  }
+
+  .present-range .ant-picker-range-separator ~ .ant-picker-input {
+    &::after {
+      width: 100px;
+      height: 30px;
+      background-color: $dark-background2 !important;
+      color: #f2f2f8;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      content: "Present";
+      position: absolute;
+      left: 0;
+      cursor: not-allowed;
+    }
+  }
+  .ant-picker-header-view {
+    color: #f2f2f8;
+  }
+  //***************************
+  // End RangePicker
+  //***************************
+
+  //***************************
+  // Start Spinner
+  //***************************
+  .ant-spin {
+    .ant-spin-dot-item {
+      background-color: white;
+      opacity: 1;
+    }
+  }
+
+  //***************************
+  // End Spinner
+  //***************************
+
+  //***************************
+  // Start Menu
+  //***************************
+  .menu-sidebar-active.ant-menu-submenu-popup {
+    background-color: $dark-background;
+    box-shadow: 0 0 0px;
+  }
+  .menu-sidebar-active {
+    background-color: $dark-background2;
+    border-right: 0;
+    .ant-menu-submenu-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 35px;
+      &::before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $focused;
+      }
+    }
+    .ant-menu {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 2px solid $dark-border;
+      background-color: $dark-background2;
+      .ant-menu-item {
+        background-color: $dark-background;
+        height: 35px;
+        padding-left: 8px;
+        padding-right: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $dark-body !important;
+        a {
+          color: $dark-body;
+
+          &:hover {
+            color: $dark-body !important;
+          }
+        }
+      }
+    }
+  }
+  .menu-sidebar {
+    background-color: $dark-background;
+    border-right: 0;
+    .ant-menu {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 2px solid $dark-border;
+      background-color: $dark-background2;
+      .ant-menu-item {
+        background-color: $dark-background;
+        height: 35px;
+        padding-right: 0;
+        margin-bottom: 0;
+        padding-left: 3px;
+        margin-top: 0;
+        color: $dark-body !important;
+        a {
+          color: $dark-body;
+
+          &:hover {
+            color: $dark-body !important;
+          }
+        }
+      }
+    }
+  }
+  //***************************
+  // End Menu
+  //***************************
+
+  //***************************
+  // Start Carousel
+  //***************************
+  .owl-carousel {
+    .owl-nav {
+      display: block !important;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      .owl-prev {
+        &::before {
+          z-index: 999;
+          content: "";
+          left: 0;
+          position: absolute;
+          background-image: url("/assets/images/svgs/prev-carousel-icon.svg");
+          width: 20px;
+          height: 15px;
+        }
+      }
+      .owl-next {
+        &::after {
+          z-index: 999;
+          content: "";
+          right: 0px;
+          position: absolute;
+          background-image: url("/assets/images/svgs/next-carousel-icon.svg");
+          width: 22px;
+          height: 15px;
+        }
+      }
+    }
+  }
+  //***************************
+  // End Carousel
+  //***************************
+
+  //***************************
+  // Start Tab Resume
+  //***************************
+  .wrapper-tab-resume {
+    height: 600px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #56566f;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #232230;
+    }
+    .tabs {
+      height: 850px;
+    }
+  }
+  //***************************
+  // End Tab Resume
+  //***************************
+
+  //***************************
+  // Start Number Item
+  //***************************
+  .ant-input-number {
+    &:hover {
+      border-width: 0;
+    }
+    input {
+      padding-top: 10px;
+      padding-left: 0;
+    }
+  }
+  .ant-input-number-focused {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0 !important;
+    input {
+      padding-top: 7px;
+      padding-left: 0;
+    }
+  }
+  //***************************
+  // End Number Item
+  //***************************
+
+  //***************************
+  // Start Wrapper Social
+  //***************************
+  .wrapper-social-input {
+    input {
+      width: 80%;
+    }
+    .ant-select {
+      .ant-select-selector {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+  }
+  //***************************
+  // End Wrapper Social
+  //***************************
+
+  //***************************
+  // Start Drawer
+  //***************************
+  .mobile-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76);
+      backdrop-filter: blur(8px);
+    }
+    .ant-drawer-content-wrapper {
+      height: 70px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $dark-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  .global-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .ant-drawer-content-wrapper {
+      height: 226px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $dark-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  .user-drawer {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .ant-drawer-content-wrapper {
+      height: 100px !important;
+      .ant-drawer-content {
+        border-top: 2px solid $dark-border;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  //***************************
+  // End Drawer
+  //***************************
+
+  //***************************
+  // Start Header Drawer
+  //***************************
+
+  .header-drawer-mobile {
+    .ant-drawer-mask {
+      background: rgba(35, 34, 48, 0.76);
+      backdrop-filter: blur(8px);
+    }
+    .ant-drawer-content-wrapper {
+      height: 68px !important;
+      background-color: $dark-background;
+      .ant-drawer-content {
+        background-color: $dark-background;
+        .ant-drawer-body {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+
+  //***************************
+  // End Header Drawer
+  //***************************
+
+  //***************************
+  // Start Segmented
+  //***************************
+  .segmented-item {
+    width: 100%;
+    background-color: #2e3042 !important;
+    border-radius: 8px;
+    padding: 10px;
+    .ant-segmented-item {
+      width: 180px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.833333px;
+      color: #6e7191;
+    }
+    .ant-segmented-group {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ant-segmented-item-selected {
+      background: $focused;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.833333px;
+      color: #f2f2f8;
+    }
+    &:hover {
+      background-color: #292a3a !important;
+    }
+  }
+  //***************************
+  //End Segmented
+  //***************************
+
+  //***************************
+  //  Start Avatar Progress
+  //***************************
+  .avatar-progress {
+    .ant-progress-inner {
+      width: 35px !important;
+      height: 35px !important;
+      background-color: #e5e5f1;
+    }
+    .ant-progress-text {
+      top: 1px !important;
+      left: 2px !important;
+      transform: translate(-9%, -40%);
+    }
+  }
+  .avatar-progress-prof {
+    .ant-progress-inner {
+      width: 70px !important;
+      height: 70px !important;
+    }
+    .ant-progress-text {
+      width: 62.5px;
+      height: 62.5px;
+      top: 1px !important;
+      left: 2px !important;
+      transform: translate(3.5%, 4%);
+    }
+  }
+
+  //***************************
+  //  End Avatar Progress
+  //***************************
+
+  //***************************
+  //  Start PopUp
+  //***************************
+
+  .ant-popover {
+    .ant-popover-content {
+      .ant-popover-arrow {
+        .ant-popover-arrow-content {
+          background-color: $dark-background;
+          &::before {
+            background-color: $dark-background;
+          }
+        }
+      }
+      .ant-popover-inner {
+        background-color: $dark-background;
+      }
+    }
+    .ant-popover-message-title {
+      @extend .small;
+      color: $dark-body;
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+    .ant-popover-buttons {
+      .ant-btn:nth-child(1) {
+        background-color: $dark-background2;
+        color: $dark-body;
+        @extend .small;
+        border: 0;
+        border-radius: 8px;
+        text-transform: capitalize;
+      }
+      .ant-btn:nth-child(2) {
+        background-color: $focused;
+        color: $dark-body;
+        @extend .small;
+        border: 0;
+        border-radius: 8px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  //***************************
+  //  End PopUp
+  //***************************
+
+  //***************************
+  //  Start Cv Select
+  //***************************
+  .cvs-select {
+    background-color: #232230;
+    border-radius: 8px;
+    .ant-select-selector {
+      background-color: #232230 !important;
+    }
+  }
+  //***************************
+  //  End Cv Select
+  //***************************
+
+  //***************************
+  //  Start Cover Letter
+  //***************************
+
+  .cover-letter {
+    textarea {
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $light-border-col;
+      }
+    }
+  }
+
+  //***************************
+  //  End Cover Letter
+  //***************************
+}
+@media only screen and (max-width: 1024px) {
+  .user-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .light-mode {
+    .ant-modal {
+      min-height: 100vh !important;
+      .ant-modal-body {
+        padding: 24px 2px;
+      }
+      .ant-modal-content {
+        min-height: 100vh !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+      }
+      margin: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .ant-picker-panels {
+      overflow-x: scroll;
+      width: 430px;
+    }
+  }
+  .dark-mode {
+    .ant-modal {
+      min-height: 100vh !important;
+      .ant-modal-content {
+        min-height: 100vh !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+      }
+      margin: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .ant-picker-panels {
+      overflow-x: scroll;
+      width: 430px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .light-mode {
+    .segmented-item {
+      .ant-segmented-item {
+        width: 100px;
+        font-size: 9px;
+      }
+    }
+  }
+  .dark-mode {
+    .segmented-item {
+      .ant-segmented-item {
+        width: 100px;
+        font-size: 9px;
+      }
+    }
+  }
+}
+.ant-form-item {
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .auth-main {
+    position: relative;
+    top: 0;
+  }
+  .wrapper-check {
+    .reposition {
+      position: relative;
+      right: 16px;
+      top: 2px;
+    }
+  }
+  .light-mode {
+    .wrapper-row-resume {
+      height: 100%;
+      overflow-y: inherit;
+    }
+    .wrapper-bread {
+      .ant-breadcrumb {
+        width: 179px;
+        overflow-x: scroll;
+        ol {
+          flex-wrap: nowrap;
+          li {
+            display: flex;
+            span {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .wrapper-bread-setting {
+      .ant-breadcrumb {
+        width: 100%;
+        overflow-x: scroll;
+        ol {
+          flex-wrap: nowrap;
+          li {
+            display: flex;
+            span {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dark-mode {
+    .wrapper-row-resume {
+      height: 100%;
+      overflow-y: inherit;
+    }
+    .wrapper-bread {
+      .ant-breadcrumb {
+        width: 179px;
+        overflow-x: scroll;
+        ol {
+          flex-wrap: nowrap;
+          li {
+            display: flex;
+            span {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .wrapper-bread-setting {
+      .ant-breadcrumb {
+        width: 100%;
+        overflow-x: scroll;
+        ol {
+          flex-wrap: nowrap;
+          li {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-image-croper {
+    .ant-upload {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .light-mode {
+    .ant-picker-panels {
+      overflow-x: scroll;
+      width: 300px;
+    }
+  }
+  .dark-mode {
+    .ant-picker-panels {
+      overflow-x: scroll;
+      width: 300px;
+    }
+  }
+}
+.wrapper-notif {
+  .notif-item:nth-child(1) {
+    div {
+      border-top-left-radius: 16px !important;
+    }
+  }
+  .notif-item:first-child {
+    div {
+      border-top-left-radius: 16px !important;
+    }
+  }
+  .notif-item:last-child {
+    div {
+      border-bottom-left-radius: 16px;
+    }
+  }
+}
+.wrapper-privacy {
+  .privacy-item:first-child {
+    border-top-left-radius: 16px;
+  }
+  .privacy-item:last-child {
+    border-bottom-left-radius: 16px;
+  }
+}
+.wrapper-account {
+  .item-account:first-child {
+    button {
+      border-top-left-radius: 16px;
+    }
+  }
+  .item-account:last-child {
+    button {
+      border-bottom-left-radius: 16px;
+    }
+  }
+}
+.wrapper-social {
+  .item-social:first-child {
+    border-top-left-radius: 16px;
+  }
+  .item-social:last-child {
+    border-top-left-radius: 16px;
+  }
+}
+.wrapper-translation {
+  .translation-item:first-child {
+    div {
+      border-top-left-radius: 16px;
+    }
+  }
+  .translation-item:last-child {
+    div {
+      border-bottom-left-radius: 16px;
+    }
+  }
+}
+.light-mode {
+  .perfect-wrapper {
+    background-color: $light-background2 !important;
+  }
+}
+.dark-mode {
+  .perfect-wrapper {
+    background-color: $dark-background2 !important;
+  }
+}
+.theme-modal {
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+}
+.avatar-resume:hover ~ .buttons {
+  display: flex !important;
+}
+.buttons {
+  &:hover {
+    display: flex !important;
+  }
+}

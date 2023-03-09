@@ -1,0 +1,203 @@
+@import "../theme/index";
+.wrapperAvatar {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+.lightRowBody {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  background-color: $light-background2;
+  height: 51px;
+  padding-left: 33px;
+  padding-right: 33px;
+  text-align: center;
+  &:first-child {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+.darkRowBody {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  background-color: $dark-background2;
+  height: 51px;
+  padding-left: 33px;
+  padding-right: 33px;
+  text-align: center;
+  &:first-child {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+.lightColHeader {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6e7191;
+  text-align: center;
+}
+.darkColHeader {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f2f8;
+  text-align: center;
+}
+.approved {
+  background: $confirm;
+  border-radius: 10px;
+  width: 16px;
+  height: 16px;
+}
+.favorite {
+  cursor: pointer;
+  padding-left: 25px;
+}
+.lightName {
+  margin-bottom: 0;
+  @extend .small;
+  color: $light-body;
+}
+.darkName {
+  margin-bottom: 0;
+  @extend .small;
+  color: $dark-body;
+}
+.lightJobTitle {
+  white-space: nowrap;
+  margin-bottom: 0;
+  @extend .bold-title;
+  color: $light-body;
+}
+.darkJobTitle {
+  white-space: nowrap;
+  margin-bottom: 0;
+  @extend .bold-title;
+  color: $dark-body;
+}
+.lightLanguage {
+  @extend .bold-title;
+  color: $light-body;
+}
+.darkLanguage {
+  @extend .bold-title;
+  color: $dark-body;
+}
+.lightCountry {
+  @extend .bold-title;
+  color: $light-body;
+  padding-left: 16px;
+}
+.darkCountry {
+  @extend .bold-title;
+  color: $dark-body;
+  padding-left: 16px;
+}
+
+.statusApprove {
+  background-color: $confirm;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.statusViewed {
+  background-color: #6acce5;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.statusDisabled {
+  background-color: $warn;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+
+.statusSuspend {
+  background-color: $danger;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.textLight {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6e7191;
+  padding-left: 5px;
+  white-space: nowrap;
+  span {
+    color: #3869ff;
+    font-weight: 700;
+  }
+}
+.textDark {
+  font-weight: 500;
+  font-size: 14px;
+  color: #f2f2f8;
+  padding-left: 5px;
+  white-space: nowrap;
+  span {
+    color: #3869ff;
+    font-weight: 700;
+  }
+}
+.lightWrapperPlaceHolder {
+  width: 35px;
+  height: 35px;
+  background-color: $light-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.darkWrapperPlaceHolder {
+  width: 35px;
+  height: 35px;
+  background-color: $dark-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lightEmpty {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $light-background2;
+}
+.darkEmpty {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $dark-background2;
+}
+@media only screen and (max-width: 768px) {
+  .lightRowBody {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .darkRowBody {
+  }
+}

@@ -1,0 +1,31 @@
+@import "../theme/index";
+.wrapper {
+  position: absolute;
+  right: 0;
+  top: 31px;
+}
+.button {
+  height: 45px;
+  border: 0;
+  background-color: $focused;
+  color: $light-background;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .button;
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    top: 31px;
+  }
+}

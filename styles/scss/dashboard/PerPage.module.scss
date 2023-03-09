@@ -1,0 +1,17 @@
+@import "../theme/index";
+.lightText {
+  @extend .small;
+  color: $light-body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.darkText {
+  @extend .small;
+  color: $dark-body;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}

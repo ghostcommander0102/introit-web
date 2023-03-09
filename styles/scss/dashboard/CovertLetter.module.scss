@@ -1,0 +1,119 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: $light-background2;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 100%;
+}
+.darkWrapper {
+  background-color: $dark-background2;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 100%;
+}
+.lightText {
+  @extend .bold-body;
+  color: $light-body;
+  box-shadow: 0 0 0;
+  line-height: 20px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+.darkText {
+  @extend .bold-body;
+  box-shadow: 0 0 0;
+  color: $dark-body;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.lightWrapperSocial {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  background-color: $light-background2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.darkWrapperSocial {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  background-color: $dark-background2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.lightButton {
+  @extend .light-title;
+  color: $light-body;
+  background-color: transparent;
+  border: 0;
+  padding: 0 3px;
+  box-shadow: 0 0 0px;
+  height: auto;
+  &:hover {
+    background-color: transparent;
+    color: $light-body;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $light-body;
+  }
+}
+.darkButton {
+  @extend .light-title;
+  color: $dark-body;
+  background-color: transparent;
+  border: 0;
+  padding: 0 3px;
+  box-shadow: 0 0 0px;
+  height: auto;
+  &:hover {
+    background-color: transparent;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $dark-body;
+  }
+}
+.lightWrapperText {
+  height: 180px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $light-border-col;
+  }
+}
+.darkWrapperText {
+  height: 180px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $dark-border-col;
+  }
+}
+@media (max-width: 768px) {
+  .lightWrapperSocial {
+    padding-bottom: 16px;
+  }
+  .darkWrapperSocial {
+    padding-bottom: 16px;
+  }
+}

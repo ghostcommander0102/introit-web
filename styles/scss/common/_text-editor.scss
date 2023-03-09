@@ -1,0 +1,66 @@
+@import "../theme/index";
+.wrapper-class {
+  .editor-class {
+    padding: 5px;
+    width: 100%;
+  }
+  .public-DraftEditorPlaceholder-inner {
+    white-space: nowrap !important;
+  }
+  .toolbar-class {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    background-color: $light-background2 !important;
+    border-bottom: 0;
+  }
+  .rdw-option-wrapper {
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    border: 0;
+    border-radius: 0;
+  }
+  .rdw-option-active {
+    background-color: $focused;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .demo-option-custom {
+    &:hover {
+      box-shadow: 0 0 0;
+    }
+  }
+  .rdw-option-disabled {
+    cursor: no-drop;
+    opacity: 1;
+  }
+  .demo-option-custom img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+// Start Tiny
+
+.tox-tinymce {
+  border: 0 !important;
+  border-radius: 8px !important;
+  .tox-toolbar__primary {
+    background-color: #eff1f8 !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .tox-editor-header {
+    padding-bottom: 0 !important;
+    box-shadow: 0 0 0px !important;
+    border-bottom: 1px solid #ced2df !important;
+  }
+  .tox-statusbar {
+    display: none !important;
+  }
+}
+.tox .tox-edit-area__iframe {
+  background-color: #eff1f8 !important;
+}
+// End Tiny

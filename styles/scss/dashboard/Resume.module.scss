@@ -1,0 +1,425 @@
+@import "../theme/index";
+.canvas {
+  transform-origin: left top;
+  width: 100% !important;
+  height: calc(100vh - 155px) !important;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  .prev {
+    transform: rotate(180deg);
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+  }
+
+  .disabled {
+    opacity: 0.3;
+    cursor: auto;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.resumeContent {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: -2000px;
+  left: 0px;
+  img {
+    opacity: 0;
+  }
+
+  svg {
+    opacity: 0;
+  }
+}
+.resume {
+  width: 720px;
+  height: 1019px;
+  background-image: linear-gradient(#f6ecff, #ebedff, #e5f4ff);
+  background-repeat: no-repeat;
+  padding: 50px;
+  position: relative;
+
+  .profile {
+    display: flex;
+    margin-left: 31px;
+    align-items: center;
+
+    .mask1 {
+      -webkit-mask-image: url("/images/mask.png");
+      mask-image: url("/images/mask.png");
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-filter: drop-shadow(15px 15px 0 #a53e6f)
+        drop-shadow(-15px -15px 0 #a53e6f);
+      filter: drop-shadow(15px 15px 0 #a53e6f)
+        drop-shadow(-15px -15px 0 #a53e6f);
+      width: 171px;
+
+      .parallax {
+        min-height: 171px;
+        width: 171px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .content {
+      margin-left: 43.25px;
+
+      .name {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+      }
+
+      .job {
+        margin-top: 17px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.055em;
+        // font-variant: small-caps;
+      }
+
+      .contactlist {
+        margin-top: 17px;
+        margin-left: 5px;
+
+        a:not(:first-child) {
+          margin-left: 15px;
+        }
+      }
+
+      .othercontact {
+        display: flex;
+        margin-top: 17px;
+
+        .emailcontact {
+          width: 184px;
+        }
+
+        .phonecontact {
+          margin-left: 32px;
+        }
+
+        .title {
+          color: #6b7598;
+          font-weight: 400;
+          font-size: 12px;
+        }
+
+        .text {
+          margin-top: 4px;
+          font-weight: 700;
+          font-size: 16px;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+
+  .maindescription {
+    margin-top: 100px;
+  }
+
+  .information {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .infoItem {
+      width: 33%;
+      margin-top: 16px;
+
+      .title {
+        font-weight: 400;
+        font-size: 12px;
+        color: #6b7598;
+      }
+
+      .text {
+        max-width: 144px;
+        word-wrap: break-word;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .componentTitle {
+    // margin-top: 66px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+  }
+
+  .eduContent {
+    position: absolute;
+    width: 405px;
+
+    .title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .content {
+      display: flex;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      justify-content: space-between;
+      margin-top: 4px;
+    }
+
+    .role {
+      margin-top: 4px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .skillContent {
+    position: absolute;
+    width: 146px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .percent {
+      margin-top: 8px;
+
+      svg:not(:first-child) {
+        margin-left: 21.5px;
+      }
+    }
+
+    .content {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+
+  .expContent {
+    position: absolute;
+    width: 620px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .content {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .description {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .languageContent {
+    position: absolute;
+    width: 146px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .percent {
+      margin-top: 8px;
+      display: flex;
+
+      svg:not(:first-child) {
+        margin-left: 21.5px;
+      }
+    }
+
+    .content {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+
+  .expertiseContent {
+    position: absolute;
+    width: 146px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .percent {
+      margin-top: 8px;
+      display: flex;
+
+      svg:not(:first-child) {
+        margin-left: 21.5px;
+      }
+    }
+
+    .content {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+
+  .coursesContent {
+    position: absolute;
+    width: 125px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .date {
+      margin-top: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .internContent {
+    position: absolute;
+    width: 125px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .location,
+    .date {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 4px;
+      word-wrap: break-word;
+    }
+  }
+
+  .referContent {
+    position: absolute;
+    width: 125px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .email,
+    .phone {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 4px;
+      word-wrap: break-word;
+    }
+  }
+
+  .extraContent {
+    position: absolute;
+    width: 620px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .hobbyContent {
+    position: absolute;
+  }
+
+  .addContent {
+    position: absolute;
+  }
+
+  .honorContent {
+    position: absolute;
+    width: 620px;
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.button {
+  @extend .button;
+  background-color: $focused;
+  width: 100%;
+  color: $dark-body;
+  height: 45px;
+  &:hover {
+    background-color: $focused;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $dark-body;
+  }
+}

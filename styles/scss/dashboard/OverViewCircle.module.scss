@@ -1,0 +1,46 @@
+@import "../theme/index";
+.wrapper {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.textLight {
+  width: 100px;
+  justify-content: flex-start;
+  display: flex;
+  position: relative;
+  left: 15px;
+  font-size: 16px;
+  color: #6e7191;
+}
+.textDark {
+  width: 100px;
+  justify-content: flex-start;
+  display: flex;
+  position: relative;
+  left: 15px;
+  font-size: 16px;
+  color: white;
+}
+.headCountLight {
+  color: #6e7191;
+  font-weight: bold;
+  font-size: 36px;
+}
+.headCountDark {
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+}
+.headCountDownLight {
+  color: #6e7191;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.headCountDownDark {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,102 @@
+@import "../theme/index";
+.lightTitle {
+  @extend .bold-body;
+  color: $light-body;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.darkTitle {
+  @extend .bold-body;
+  color: $dark-body;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.lightSubTitle {
+  @extend .body;
+  color: $light-body;
+  padding-left: 8px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.darkSubTitle {
+  @extend .body;
+  color: $dark-body;
+  padding-left: 8px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.wrapperRow {
+  background-color: $light-background;
+  border-radius: 12px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lightHeaderRow {
+  @extend .small;
+  color: $light-body;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.darkHeaderRow {
+  @extend .small;
+  color: $dark-body;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.lightWrapperGray {
+  background: $light-background2;
+  height: 33px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.darkWrapperGray {
+  background: $dark-background2;
+  height: 33px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lightHeaderRowM {
+  @extend .light-title;
+  color: $light-body;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.darkHeaderRowM {
+  @extend .light-title;
+  color: $dark-body;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .lightWrapperGray {
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+  .darkWrapperGray {
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+}

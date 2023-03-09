@@ -1,0 +1,79 @@
+@import "../theme/index";
+.lightInput {
+  width: 48px;
+  background: $light-background2;
+  border-radius: 8px;
+  height: 48px;
+  border: 0;
+  color: $light-body !important;
+  text-align: center;
+  @extend .header3;
+  &::placeholder {
+    color: $light-body !important;
+    font-weight: 300;
+  }
+  &:focus {
+    border: 2px solid $focused;
+    background-color: $light-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+}
+.darkInput {
+  width: 48px;
+  background: $dark-background2;
+  border-radius: 8px;
+  height: 48px;
+  border: 0;
+  color: $dark-body !important;
+  text-align: center;
+  @extend .header3;
+  &::placeholder {
+    color: $dark-body !important;
+    font-weight: 300;
+  }
+  &:focus {
+    border: 2px solid $focused;
+    background-color: $dark-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+}
+.lightText {
+  @extend .header3;
+  text-align: center;
+  color: $light-body;
+}
+.darkText {
+  @extend .header3;
+  text-align: center;
+  color: $light-body;
+}
+.lightLittletext {
+  @extend .light-title;
+  text-align: center;
+  color: $light-body;
+}
+.darkLittleText {
+  @extend .light-title;
+  text-align: center;
+  color: $dark-body;
+}
+.wrapperInput {
+  display: flex;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .wrapperInput {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}

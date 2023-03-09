@@ -1,0 +1,272 @@
+@import "../theme/index";
+.lightText {
+  text-align: center;
+  color: $light-body;
+  @extend .light-title;
+}
+.darkText {
+  text-align: center;
+  color: $dark-body;
+  @extend .light-title;
+}
+.button {
+  width: 194px;
+  height: 45px;
+  background: $focused;
+  border-radius: 8px;
+  color: $light-background;
+  border: 0;
+  @extend .button;
+  &:hover {
+    background: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background;
+  }
+}
+.lightWrapper {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.darkWrapper {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.lightUpload {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0;
+  font-size: 14px;
+  text-align: center;
+  color: $light-body;
+  @extend .button;
+  &:hover {
+    color: $light-body;
+    background-color: transparent;
+  }
+  &:focus {
+    color: $light-body;
+    background-color: transparent;
+  }
+}
+.darkUpload {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: $dark-body;
+  @extend .button;
+  &:hover {
+    color: $dark-body;
+    background-color: transparent;
+  }
+  &:focus {
+    color: $dark-body;
+    background-color: transparent;
+  }
+}
+.lightRotationText {
+  @extend .small;
+  text-align: center;
+  color: $light-body;
+  margin: 0;
+}
+.darkRotationText {
+  @extend .small;
+  text-align: center;
+  color: $dark-body;
+  margin: 0;
+}
+.lightRotationButton {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  box-shadow: 0 0 0;
+  text-align: center;
+  color: $light-body;
+  @extend .small;
+  &:hover {
+    color: $light-body;
+    background-color: transparent;
+  }
+  &:focus {
+    color: $light-body;
+    background-color: transparent;
+  }
+}
+.darkRotationButton {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  box-shadow: 0 0 0;
+  text-align: center;
+  color: $dark-body;
+  @extend .small;
+  &:hover {
+    color: $dark-body;
+    background-color: transparent;
+  }
+  &:focus {
+    color: $dark-body;
+    background-color: transparent;
+  }
+}
+.zoomWrapper {
+  position: absolute;
+  right: 20%;
+  top: 33%;
+  width: 50px;
+  height: 200px;
+  transform: translateY(-50%);
+}
+.wrapperRotation {
+  width: 60%;
+}
+.lightTextZoom {
+  @extend .small;
+  color: $light-body;
+}
+.darkTextZoom {
+  @extend .small;
+  color: $dark-body;
+}
+.lightTop {
+  background: $light-background2;
+  color: $light-body;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  bottom: -64px;
+  left: 6px;
+  z-index: 2;
+  @extend .bold-title;
+}
+.darkTop {
+  background: $dark-background2;
+  color: $dark-body;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  bottom: -64px;
+  left: 6px;
+  z-index: 2;
+  @extend .bold-title;
+}
+.lightBottom {
+  background: $light-background2;
+  color: $light-body;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  top: 25px;
+  left: 6px;
+  z-index: 2;
+  @extend .bold-title;
+}
+.darkBottom {
+  background: $dark-background2;
+  color: $dark-body;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  top: 25px;
+  left: 6px;
+  z-index: 2;
+  @extend .bold-title;
+}
+.imgWrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.saveButton {
+  background-color: $focused;
+  border-radius: 8px;
+  height: 45px;
+  width: 206px;
+  @extend .button;
+  &:hover {
+    background-color: $focused;
+  }
+  &:focus {
+    background-color: $focused;
+  }
+  &:disabled {
+    background-color: $focused;
+    &:hover {
+      background-color: $focused;
+    }
+  }
+}
+.wrapperPlaceHolder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: $focused;
+  @extend .header3;
+  color: $light-background;
+  position: relative;
+  top: 1px;
+  left: 0px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .zoomWrapper {
+    right: 5%;
+  }
+  .wrapperRotation {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lightUpload {
+    width: 100%;
+    background-color: $light-background2;
+    border-radius: 0;
+  }
+  .saveButton {
+    width: 50%;
+    border-radius: 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .zoomWrapper {
+    right: -2.5%;
+  }
+}

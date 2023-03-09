@@ -1,0 +1,118 @@
+@import "../theme/index";
+.wrapperLight {
+  background-color: $light-background2;
+  color: $light-body;
+  border-radius: 8px;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  @extend .small;
+}
+.wrapperDark {
+  background-color: $dark-background2;
+  color: $dark-body;
+  border-radius: 8px;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  @extend .small;
+}
+.inputLight {
+  background-color: $light-background2;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 0;
+  color: $light-body !important;
+  padding-left: 14px;
+  @extend .body;
+  &::placeholder {
+    color: $light-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $light-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $light-background2;
+  }
+}
+.inputDark {
+  background-color: $dark-background2;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 0;
+  color: $dark-body !important;
+  padding-left: 14px;
+  @extend .body;
+  &::placeholder {
+    color: $dark-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $dark-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $dark-background2;
+  }
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0px;
+  height: 100%;
+  &:hover {
+    background-color: transparent;
+    border: 0;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+  }
+}
+.save {
+  border: 0;
+  background: $focused;
+  border-radius: 0px 8px 8px 0px !important;
+  width: 100px;
+  height: 45px;
+  color: $light-background2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -3px;
+  z-index: 99;
+  &:hover {
+    background: $focused;
+    color: $light-background2;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background2;
+  }
+  &:disabled {
+    background: $focused;
+    color: $light-background2;
+    &:hover {
+      background: $focused;
+      color: $light-background2;
+    }
+  }
+}
+.icon {
+  padding-left: 5px;
+}

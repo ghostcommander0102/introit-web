@@ -1,0 +1,51 @@
+@import "../theme/index";
+.lightWrapper {
+  background: $light-background2;
+  height: 40px;
+}
+.darkWrapper {
+  background: $dark-background2;
+  height: 40px;
+}
+
+.lightText {
+  color: $light-body;
+  @extend .small;
+}
+.darkText {
+  color: $dark-body;
+  @extend .small;
+}
+.lightWeb {
+  color: $light-body;
+  @extend .light-title;
+}
+.darkWeb {
+  color: $dark-body;
+  @extend .light-title;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .lightWrapper {
+    height: 55px;
+  }
+  .darkWrapper {
+    height: 55px;
+  }
+}

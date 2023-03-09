@@ -1,0 +1,33 @@
+@import "../theme/index";
+.lightButton {
+  background-color: transparent;
+  color: #6e7191;
+  border: 0;
+  box-shadow: 0 0 0px;
+  font-weight: 500;
+  font-size: 16px;
+  &:hover {
+    background-color: transparent;
+    color: #6e7191;
+  }
+  &:focus {
+    background-color: transparent;
+    color: #6e7191;
+  }
+}
+.darkButton {
+  background-color: transparent;
+  color: #f2f2f8;
+  border: 0;
+  box-shadow: 0 0 0px;
+  font-weight: 500;
+  font-size: 16px;
+  &:hover {
+    background-color: transparent;
+    color: #f2f2f8;
+  }
+  &:focus {
+    background-color: transparent;
+    color: #f2f2f8;
+  }
+}

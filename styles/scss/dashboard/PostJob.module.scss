@@ -1,0 +1,19 @@
+@import "../theme/index";
+.button {
+  background: $focused;
+  border-radius: 8px;
+  border: 0;
+  color: $light-background;
+  width: 163px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .small;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .button {
+    width: 120px;
+  }
+}

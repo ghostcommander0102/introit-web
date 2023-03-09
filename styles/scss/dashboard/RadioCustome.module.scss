@@ -1,0 +1,43 @@
+@import "../theme/index";
+.wrapperLight {
+  input {
+    border: 2px solid #6e7191;
+
+    width: 16px;
+    height: 16px;
+    &:checked {
+      border: 2px solid #6e7191 !important;
+      background-color: white;
+      background-image: url("/assets/images/svgs/radio-icon.svg") !important;
+      background-size: 15px;
+    }
+    &:focus {
+      box-shadow: 0 0 0;
+    }
+  }
+  label {
+    font-size: 13px;
+    color: #6e7191;
+  }
+}
+.wrapperDark {
+  input {
+    border: 2px solid #f2f2f8;
+    width: 16px;
+    height: 16px;
+    background-color: #232230;
+    &:checked {
+      border: 2px solid #f2f2f8 !important;
+      background-color: #232230;
+      background-image: url("/assets/images/svgs/dark/radio-icon.svg") !important;
+      background-size: 14px;
+    }
+    &:focus {
+      box-shadow: 0 0 0;
+    }
+  }
+  label {
+    font-size: 13px;
+    color: #f2f2f8;
+  }
+}

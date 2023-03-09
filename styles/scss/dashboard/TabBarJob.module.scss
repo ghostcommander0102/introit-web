@@ -1,0 +1,62 @@
+@import "../theme/index";
+.wrapperLight {
+  background: #ffffff;
+  border: 8px solid #ffffff;
+  border-radius: 10px;
+}
+.wrapperDark {
+  background: #2e3042;
+  border: 8px solid #2e3042;
+  border-radius: 10px;
+}
+.active {
+  background: $focused !important;
+  border-radius: 10px;
+  width: 250px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  color: #f2f2f8 !important;
+  border: 0;
+}
+.buttonLight {
+  background: transparent;
+  border-radius: 10px;
+  width: 250px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  color: #6e7191;
+  border: 0;
+  white-space: nowrap;
+}
+.buttonDark {
+  background: transparent;
+  border-radius: 10px;
+  width: 250px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  color: #f2f2f8;
+  border: 0;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  .buttonLight {
+    width: 230px;
+    font-size: 15px;
+  }
+  .buttonDark {
+    width: 23s0px;
+    font-size: 15px;
+  }
+}

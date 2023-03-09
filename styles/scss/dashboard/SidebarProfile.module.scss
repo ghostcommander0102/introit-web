@@ -1,0 +1,84 @@
+@import "../theme/index";
+.lightWrapperSidebar {
+  background-color: $light-background2;
+  height: 100%;
+}
+.darkWrapperSidebar {
+  background-color: $dark-background2;
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 143px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lightWrapperImg {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  bottom: -34px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-background;
+}
+.darkWrapperImg {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  bottom: -34px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-background;
+}
+.img {
+  border-radius: 50%;
+}
+.editBack {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+}
+.wrapperAvatar {
+  position: absolute;
+  right: -3.5px;
+  bottom: -0px;
+  z-index: 2;
+}
+.wrapperPlaceHolder {
+  width: 61.5px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: $focused;
+  @extend .header3;
+  color: $light-background;
+  position: relative;
+  top: 1px;
+  left: 0px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    height: 255.95px;
+  }
+}

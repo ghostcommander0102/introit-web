@@ -1,0 +1,79 @@
+@import "../theme/index";
+.lightWrapper {
+  background: $light-background2;
+  height: 50px;
+  width: 100%;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+.darkWrapper {
+  background: $dark-background2;
+  height: 50px;
+  width: 100%;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+.lightRoleName {
+  @extend .light-title;
+  color: $light-body;
+  white-space: nowrap;
+}
+.darkRoleName {
+  @extend .light-title;
+  color: $dark-body;
+  white-space: nowrap;
+}
+.lightRole {
+  @extend .bold-body;
+  color: $light-body;
+  white-space: nowrap;
+}
+.darkRole {
+  @extend .bold-body;
+  color: $dark-body;
+  white-space: nowrap;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0px;
+
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+.blueItem {
+  color: $focused;
+}
+.blueName {
+  @extend .bold-body;
+  color: $focused;
+}
+@media only screen and (max-width: 1024px) {
+  .lightWrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .darkWrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lightWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 89px;
+  }
+  .darkWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 89px;
+  }
+  .button {
+    padding: 0;
+  }
+}

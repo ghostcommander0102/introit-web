@@ -1,0 +1,55 @@
+@import "../theme/index";
+.wrapper {
+  position: relative;
+  z-index: 98;
+}
+.listLight {
+  border: 1px solid #c6c2de;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+}
+.listDark {
+  border: 1px solid #56566f;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  background-color: #3d3c56;
+}
+.itemLight {
+  border: 0;
+  color: #6e7191;
+  font-weight: 600;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: #f2f2f8;
+    font-weight: bold;
+  }
+}
+.itemDark {
+  border: 0;
+  color: #f2f2f8;
+  font-weight: 600;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: #2e3042 !important;
+    font-weight: bold;
+  }
+}
+.textLight {
+  padding: 5px;
+  margin: 0;
+}
+.textDark {
+  padding: 5px;
+  margin: 0;
+}

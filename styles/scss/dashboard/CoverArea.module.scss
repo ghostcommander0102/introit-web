@@ -1,0 +1,33 @@
+@import "../theme/index";
+.lightArea {
+  background-color: $light-background2 !important;
+  @extend .small;
+  color: $light-body;
+  border: 0;
+  padding: 0 !important;
+  &:focus {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0;
+    font-weight: 700 !important;
+  }
+  &:disabled {
+    color: $light-body !important;
+    padding: 0 !important;
+  }
+}
+.darkArea {
+  background-color: $dark-background2 !important;
+  @extend .small;
+  color: $dark-body;
+  border: 0;
+  padding: 0 !important;
+  &:focus {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0px;
+    font-weight: 700 !important;
+  }
+  &:disabled {
+    color: $dark-body !important;
+    padding: 0 !important;
+  }
+}

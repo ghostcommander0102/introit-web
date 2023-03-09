@@ -1,0 +1,37 @@
+@import "../theme/index";
+.lightText {
+  @extend .body;
+  color: $light-body;
+}
+.darkText {
+  @extend .body;
+  color: $dark-body;
+}
+.lightTextBold {
+  @extend .bold-body;
+  color: $light-body;
+}
+.darkTextBold {
+  @extend .bold-body;
+  color: $dark-body;
+}
+.lightSetup {
+  @extend .small;
+  color: $light-body;
+}
+.darkSetup {
+  @extend .small;
+  color: $dark-body;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  padding-left: 10px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}

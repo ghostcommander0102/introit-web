@@ -1,0 +1,17 @@
+@import "../theme/index";
+.lightButton {
+  background-color: transparent;
+  border: 0;
+}
+.darkButton {
+  background-color: transparent;
+  border: 0;
+  &:hover {
+    background-color: transparent;
+    border: 0;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+  }
+}

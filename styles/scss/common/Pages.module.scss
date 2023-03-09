@@ -1,0 +1,177 @@
+@import "../theme/index";
+.lightUserLayout {
+  background-color: $light-background;
+}
+.darkUserLayout {
+  background-color: $dark-background;
+}
+
+.root-content {
+  width: 100%;
+  background-color: $light-background2;
+  height: calc(100% - 64px);
+}
+.lightRoot {
+  width: 100%;
+  background-color: $light-background2;
+  height: calc(100vh - 64px);
+}
+.darkRoot {
+  width: 100%;
+  background-color: $dark-background2;
+  height: calc(100vh - 64px);
+}
+.lightResumeWrapper {
+  padding-top: 16px;
+  background-color: $light-background2;
+  height: calc(100%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.darkResumeWrapper {
+  padding-top: 16px;
+  background-color: $dark-background2;
+  height: calc(100%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.resumeButton {
+  width: 100%;
+  height: 45px;
+  @extend .button;
+  color: $light-background;
+  background-color: $focused;
+  border: 0;
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+.lightWrapperSlider {
+  background-color: $light-background2;
+}
+.darkWrapperSlider {
+  background-color: $dark-background2;
+}
+
+.lightProgressWrapper {
+  padding-top: 64px;
+  background-color: $light-background2;
+  height: calc(100%);
+}
+.darkProgressWrapper {
+  padding-top: 64px;
+  background-color: $dark-background2;
+  height: calc(100%);
+}
+.lightWrapperWhiteBread {
+  background-color: $light-background;
+  width: 100%;
+  position: relative;
+  padding-bottom: 16px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $light-background;
+    bottom: -30px;
+    z-index: 22;
+  }
+  &::after {
+    width: 30px;
+    height: 30px;
+    content: "";
+    border-top-left-radius: 30px;
+    background-color: $light-background2;
+    bottom: -30px;
+    position: absolute;
+    left: 0px;
+    z-index: 33;
+  }
+}
+.darkWrapperWhiteBread {
+  background-color: $dark-background;
+  width: 100%;
+  position: relative;
+  padding-bottom: 16px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $dark-background;
+    bottom: -30px;
+    z-index: 22;
+  }
+  &::after {
+    width: 30px;
+    height: 30px;
+    content: "";
+    border-top-left-radius: 30px;
+    background-color: $dark-background2;
+    bottom: -30px;
+    position: absolute;
+    left: 0px;
+    z-index: 33;
+  }
+}
+
+.lightText {
+  @extend .small;
+  margin-bottom: 8px;
+  color: $light-body;
+}
+.darkText {
+  @extend .small;
+  margin-bottom: 8px;
+  color: $dark-body;
+}
+.menuDot {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  &:focus {
+    background-color: transparent;
+    border: 0;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 0;
+  }
+}
+@media (max-width: 768px) {
+  .lightRoot {
+    height: calc(100%);
+    min-height: calc(100vh - 135px);
+    border-radius: 0 !important;
+    margin-top: 62px;
+  }
+  .darkRoot {
+    height: calc(100%);
+    min-height: calc(100vh - 135px);
+    border-radius: 0 !important;
+    margin-top: 62px;
+  }
+  .lightRoot {
+    width: 100%;
+    background-color: $light-background;
+  }
+  .darkRoot {
+    background-color: $dark-background;
+  }
+  .wrapperWhiteBread {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}

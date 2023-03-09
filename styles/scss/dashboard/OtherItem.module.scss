@@ -1,0 +1,34 @@
+@import "../theme/index";
+
+.lightText {
+  @extend .body;
+  color: $light-body;
+  line-height: 25px;
+}
+.darkText {
+  @extend .body;
+  color: $dark-body;
+}
+.lightButton {
+  @extend .button;
+  color: $light-subtitle;
+  background-color: $light-background2;
+  border-radius: 8px;
+  padding: 4px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 0;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  &:hover {
+    color: $light-subtitle;
+    background-color: $light-background2;
+  }
+  &:focus {
+    color: $light-subtitle;
+    background-color: $light-background2;
+  }
+}

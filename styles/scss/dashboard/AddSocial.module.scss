@@ -1,0 +1,132 @@
+@import "../theme/index";
+.master:first-child {
+  .lightWrapper {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .darkWrapper {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+}
+.master:last-child {
+  .lightWrapper {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .darkWrapper {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+.lightWrapper {
+  display: flex;
+  background-color: $light-background2;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.darkWrapper {
+  display: flex;
+  background-color: $dark-background2;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.lightInput {
+  width: 100%;
+  background-color: $light-background2 !important;
+  border-radius: 8px;
+  height: 40px;
+  border: 0;
+  color: $light-body !important;
+  @extend .body;
+  padding-left: 16px;
+  &::placeholder {
+    color: $light-body !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $light-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $light-background2 !important;
+  }
+}
+.darkInput {
+  width: 100%;
+  background-color: $dark-background2 !important;
+  border-radius: 8px;
+  height: 40px;
+  border: 0;
+  color: $dark-body !important;
+  @extend .body;
+  padding-left: 14px;
+  &::placeholder {
+    color: $dark-body !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $dark-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $dark-background2 !important;
+  }
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  padding-left: 16px;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0;
+  &:hover {
+    border: 0;
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+  }
+}
+.buttonSave {
+  background: transparent;
+  color: $focused;
+  border-radius: 0px 12px 12px 0px;
+  width: 114px;
+  height: 40px;
+  border-left: 3px solid $focused;
+  position: relative;
+  top: 2px;
+  @extend .button;
+  text-transform: uppercase;
+  &:hover {
+    background: transparent;
+    color: $focused;
+  }
+  &:focus {
+    background: transparent;
+    color: $focused;
+  }
+}
+
+.icon {
+  padding-left: 5px;
+  position: relative;
+  top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .buttonSave {
+    width: 70px !important;
+  }
+}

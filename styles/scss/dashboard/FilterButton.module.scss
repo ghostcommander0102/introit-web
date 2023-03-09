@@ -1,0 +1,119 @@
+@import "../theme/index";
+.lightButton {
+  border-radius: 8px;
+  width: 104px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-background2;
+  border: 0;
+  padding: 0;
+  @extend .body;
+  color: $light-body;
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+    border: 0;
+  }
+  &:focus {
+    background-color: $light-background2;
+    border: 0;
+    color: $light-body;
+  }
+}
+.lightButtonDrawer {
+  border-radius: 8px;
+  width: 104px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-background2;
+  border: 0;
+  padding: 0;
+  @extend .body;
+  color: $light-body;
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+    border: 0;
+  }
+  &:focus {
+    background-color: $light-background2;
+    border: 0;
+    color: $light-body;
+  }
+}
+.darkButton {
+  border-radius: 8px;
+  width: 104px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-background2;
+  border: 0;
+  padding: 0;
+  @extend .body;
+  color: $dark-body;
+  &:hover {
+    background-color: $dark-background2;
+    color: $dark-body;
+    border: 0;
+  }
+  &:focus {
+    background-color: $dark-background2;
+    border: 0;
+    color: $dark-body;
+  }
+}
+.darkButtonDrawer {
+  border-radius: 8px;
+  width: 104px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-background2;
+  border: 0;
+  padding: 0;
+  @extend .body;
+  color: $light-body;
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+    border: 0;
+  }
+  &:focus {
+    background-color: $light-background2;
+    border: 0;
+    color: $light-body;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lightButton {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    box-shadow: 0 0 0px;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  .darkButton {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    box-shadow: 0 0 0px;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}

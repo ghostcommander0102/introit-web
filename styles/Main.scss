@@ -1,0 +1,24 @@
+// tailwind
+@tailwind components;
+@tailwind utilities;
+@import "./scss/theme/index";
+@import "./scss/common/index";
+@import "./scss/dashboard/index";
+
+@font-face {
+  font-family: "barlow-bold";
+  src: url("/assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "barlow-medium";
+  src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+body {
+  line-height: 1.5px !important;
+}
+
+.tox-notifications-container {
+  display: none !important;
+}

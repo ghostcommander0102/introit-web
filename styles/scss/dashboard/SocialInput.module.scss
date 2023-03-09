@@ -1,0 +1,122 @@
+@import "../theme/index";
+.lightInput {
+  width: 70% !important;
+  background: $light-background2 !important;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  padding-left: 16px;
+  border-left: 0;
+  color: $light-body !important;
+  @extend .body;
+  &::placeholder {
+    color: $light-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $light-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $light-background2;
+  }
+}
+.darkInput {
+  width: 70% !important;
+  background: $dark-background2 !important;
+  border-radius: 8px;
+  height: 45px;
+  border: 0;
+  padding-left: 16px;
+  color: $dark-body !important;
+  @extend .body;
+  &::placeholder {
+    color: $dark-border-col !important;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    background-color: $dark-background2 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 !important;
+  }
+  &:disabled {
+    cursor: no-drop;
+    background-color: $dark-background2;
+  }
+}
+.button {
+  border: 0;
+  background: $focused;
+  border-radius: 0px 12px 12px 0px !important;
+  width: 195px;
+  height: 45px;
+  color: $light-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  top: 19px;
+  @extend .button;
+  text-transform: uppercase;
+  &:hover {
+    background: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background;
+  }
+  &:disabled {
+    background: $focused;
+    color: $light-background;
+    &:hover {
+      background: $focused;
+      color: $light-background;
+    }
+  }
+}
+.icon {
+  padding-left: 5px;
+  position: relative;
+  top: 3px;
+}
+.lightLabel {
+  @extend .light-title;
+  color: $light-body;
+}
+.darkLabel {
+  @extend .light-title;
+  color: $dark-body;
+}
+@media only screen and (max-width: 1024px) {
+  .button {
+    width: 70px;
+  }
+  .lightInput {
+    width: 75% !important;
+  }
+  .darkInput {
+    width: 75% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lightInput {
+    width: 70% !important;
+  }
+  .darkInput {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .lightInput {
+    width: 55% !important;
+  }
+  .darkInput {
+    width: 55% !important;
+  }
+}

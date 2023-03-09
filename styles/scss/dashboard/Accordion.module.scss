@@ -1,0 +1,66 @@
+@import "../theme/index";
+.lightButton {
+  background-color: $focused;
+  border: 0;
+  color: $dark-body;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  @extend .button;
+  &:hover {
+    background-color: $focused;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $dark-body;
+  }
+}
+.darkButton {
+  background-color: $focused;
+  border: 0;
+  color: $dark-body;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  @extend .button;
+  &:hover {
+    background-color: $focused;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $dark-body;
+  }
+}
+.deleteButton {
+  background-color: transparent;
+  color: $light-body;
+  border: 0;
+  box-shadow: 0 0 0px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  @extend .button;
+  text-transform: uppercase;
+  &:hover {
+    background-color: transparent;
+    color: $light-body;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $light-body;
+  }
+  &:disabled {
+    background-color: transparent;
+  }
+  &:disabled {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

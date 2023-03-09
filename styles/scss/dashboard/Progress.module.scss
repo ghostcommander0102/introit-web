@@ -1,0 +1,34 @@
+@import "../theme/index";
+.wrapperRed {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8c95a4;
+  height: 4px;
+  div {
+    background-color: $danger;
+    height: 4px;
+  }
+}
+.wrapperWarning {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8c95a4;
+  height: 4px;
+  div {
+    background-color: $warn;
+    height: 4px;
+  }
+}
+.wrapperSuccess {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8c95a4;
+  height: 4px;
+  div {
+    background-color: $confirm;
+    height: 4px;
+  }
+}

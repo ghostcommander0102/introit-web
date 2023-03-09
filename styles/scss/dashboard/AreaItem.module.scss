@@ -1,0 +1,40 @@
+@import "../theme/index";
+
+.lightArea {
+  background-color: $light-background2 !important;
+  border-radius: 16px;
+  color: $light-body;
+  border: 0;
+  @extend .body;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0;
+  }
+}
+.darkArea {
+  background-color: $dark-background2 !important;
+  border-radius: 16px;
+  color: $dark-body;
+  border: 0;
+  @extend .body;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:focus {
+    border: 2px solid $focused !important;
+    box-shadow: 0 0 0;
+  }
+}
+.lightLabel {
+  @extend .light-title;
+  color: $light-body;
+  width: 100%;
+}
+.darkLabel {
+  @extend .light-title;
+  color: $dark-body;
+  width: 100%;
+}

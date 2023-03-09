@@ -1,0 +1,62 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server",
+    "build": "next build",
+    "start": "next start -p 3010",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8fshar/GEnvire_Site.git"
+  },
+  "keywords": [
+    "Enviretech.com",
+    "Techtalentshub.com"
+  ],
+  "author": "Envire Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8fshar/GEnvire_Site/issues"
+  },
+  "homepage": "https://github.com/8fshar/GEnvire_Site#readme",
+  "dependencies": {
+    "@react-google-maps/api": "^2.12.2",
+    "@react-pdf-viewer/core": "^3.10.0",
+    "@svgr/webpack": "^6.2.1",
+    "@tinymce/tinymce-react": "^4.2.0",
+    "antd": "^4.20.5",
+    "axios": "^0.26.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "^12.1.0",
+    "next-pwa": "^5.5.2",
+    "next-translate": "^1.4.0",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-easy-crop": "^4.1.4",
+    "react-gtm-module": "^2.0.11",
+    "react-image-crop": "^10.0.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-phone-input-2": "^2.15.0",
+    "react-spinners": "^0.11.0",
+    "recharts": "^2.1.9",
+    "recoil": "^0.6.1",
+    "sass": "^1.49.8",
+    "swiper": "^8.2.4",
+    "use-places-autocomplete": "^4.0.0",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  }
+}

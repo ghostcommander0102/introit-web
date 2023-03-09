@@ -1,0 +1,53 @@
+.wrapper {
+  width: 585px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperContent {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.content {
+  width: calc(585px - 234px);
+  padding-right: 24px;
+}
+.sidebar {
+  width: 234px;
+}
+.avatar {
+  width: 234px;
+  height: 234px;
+}
+.fullname {
+  color: #2e2725;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.jobTitle {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.055em;
+  color: #2e2725;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+.divider {
+  background-color: #9bdae9;
+  width: 100%;
+  height: 36px;
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    color: #2e2725;
+  }
+}

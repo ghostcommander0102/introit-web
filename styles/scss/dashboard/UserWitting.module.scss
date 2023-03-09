@@ -1,0 +1,229 @@
+@import "../theme/index";
+
+.lightWrapperSidebar {
+  background-color: $light-background;
+  height: 68vh;
+  border-top-left-radius: 16px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $light-border-col;
+  }
+}
+
+.darkWrapperSidebar {
+  background-color: $dark-background;
+  height: 68vh;
+  border-top-left-radius: 16px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $dark-border-col;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 267px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+}
+
+.lightWrapperImg {
+  width: 123px;
+  height: 123px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 4px solid $light-background2;
+  border-radius: 50%;
+  bottom: -34px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-background;
+}
+
+.darkWrapperImg {
+  width: 123px;
+  height: 123px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 4px solid $dark-background2;
+  border-radius: 50%;
+  bottom: -34px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-background;
+}
+
+.img {
+  border-radius: 50%;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.editBack {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+}
+
+.wrapperAvatar {
+  position: absolute;
+  right: -3.5px;
+  bottom: -3.5px;
+  z-index: 2;
+}
+
+.lightFullName {
+  @extend .header3;
+  color: $light-body;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.darkFullName {
+  @extend .header3;
+  color: $dark-body;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+}
+
+.lightJobTitle {
+  @extend .body;
+  color: $light-body;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+}
+
+.darkJobTitle {
+  @extend .body;
+  color: $dark-body;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+}
+
+.lightTitle {
+  @extend .light-title;
+  color: $light-body;
+}
+
+.darkTitle {
+  @extend .light-title;
+  color: $dark-body;
+}
+
+.lightTitle {
+  line-height: 19px;
+}
+
+.lightBody {
+  @extend .small;
+  color: $light-body;
+  white-space: normal;
+  line-height: 22px;
+
+  a {
+    color: $light-body;
+    white-space: normal;
+    line-height: 22px;
+  }
+}
+
+.lightFullName {
+  line-height: 38px;
+}
+
+.lightJobTitle {
+  line-height: 25px;
+}
+
+.darkBody {
+  @extend .small;
+  color: $dark-body;
+  white-space: normal;
+
+  a {
+    color: $dark-body;
+    white-space: normal;
+  }
+}
+
+.lightDivider {
+  @extend .button;
+  color: $light-body;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.darkDivider {
+  @extend .button;
+  color: $dark-body;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.lightUnderline {
+  width: 100%;
+  height: 1px;
+  background-color: $light-border;
+  margin-top: 24px;
+}
+
+.darkUnderline {
+  width: 100%;
+  height: 1px;
+  background-color: $dark-border;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .lightWrapperSidebar {
+    height: 100%;
+    border-top-left-radius: 0px;
+  }
+
+  .darkWrapperSidebar {
+    height: 100%;
+    border-top-left-radius: 0px;
+  }
+
+  .wrapper {
+    height: 255.95px;
+    border-top-left-radius: 0px;
+  }
+}

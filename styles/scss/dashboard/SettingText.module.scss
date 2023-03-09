@@ -1,0 +1,47 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: #e5e9f0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41.6px;
+}
+.darkWrapper {
+  background-color: #232230;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41.6px;
+}
+.lightText {
+  font-weight: 600;
+  font-size: 20px;
+  color: #6e7191;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.darkText {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f2f2f8;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.button {
+  border: 0;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}

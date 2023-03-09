@@ -1,0 +1,22 @@
+@import "../theme/index";
+
+.textLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textDark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonDropDown {
+  width: 5px;
+  padding: 0px 5px;
+  height: 19px !important;
+  background: transparent !important;
+  border: 0;
+  &:hover {
+    background-color: transparent !important;
+  }
+}

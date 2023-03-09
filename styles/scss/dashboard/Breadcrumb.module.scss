@@ -1,0 +1,46 @@
+@import "../theme/index";
+.lightItem {
+  color: $light-body;
+  cursor: pointer;
+  @extend .small;
+  white-space: nowrap;
+  &:hover {
+    color: $light-body !important;
+  }
+}
+.darkItem {
+  color: $dark-body;
+  cursor: pointer;
+  @extend .small;
+  white-space: nowrap;
+  &:hover {
+    color: $dark-body !important;
+  }
+}
+.lightLast {
+  @extend .button;
+  color: $light-body;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.darkLast {
+  @extend .button;
+  color: $dark-body;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.separator {
+  display: inline-block;
+  position: relative;
+  top: 2.5px;
+}
+.lightNumber {
+  @extend .light-title;
+  color: $light-body;
+  padding-left: 8px;
+}
+.darkNumber {
+  @extend .light-title;
+  color: $dark-body;
+  padding-left: 8px;
+}

@@ -1,0 +1,83 @@
+@import "../theme/index";
+.lightWrapper {
+  display: flex;
+  border-radius: 8px;
+  background-color: $light-background2;
+  color: $light-body;
+  border: 0;
+  width: 198px;
+  height: 24px;
+  justify-content: space-between;
+  @extend .small;
+  align-items: center;
+  &:focus {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+}
+
+.darkWrapper {
+  display: flex;
+  border-radius: 8px;
+  background-color: $dark-background2;
+  color: $dark-body;
+  border: 0;
+  width: 198px;
+  height: 24px;
+  justify-content: space-between;
+  @extend .small;
+  align-items: center;
+  &:focus {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+}
+
+.lightWrapperIn {
+  display: flex;
+  border-radius: 8px;
+  background-color: $light-background;
+  color: $light-body;
+  border: 0;
+  width: 198px;
+  height: 24px;
+  justify-content: space-between;
+  @extend .small;
+  align-items: center;
+  &:focus {
+    background-color: $light-background;
+    color: $light-body;
+  }
+  &:hover {
+    background-color: $light-background;
+    color: $light-body;
+  }
+}
+.darkWrapperIn {
+  display: flex;
+  border-radius: 8px;
+  background-color: $dark-background;
+  color: $dark-body;
+  border: 0;
+  width: 198px;
+  height: 24px;
+  justify-content: space-between;
+  @extend .small;
+  align-items: center;
+  &:focus {
+    background-color: $dark-background;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $dark-background;
+    color: $dark-body;
+  }
+}

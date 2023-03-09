@@ -1,0 +1,43 @@
+@import "../theme/index";
+.lightWrapper {
+  width: 100%;
+  height: 52px;
+  background-color: $light-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.darkWrapper {
+  width: 100%;
+  height: 52px;
+  background-color: $dark-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.lightText {
+  @extend .bold-body;
+  color: $light-body;
+  margin-bottom: 0;
+}
+.darkText {
+  @extend .bold-body;
+  color: $dark-body;
+  margin-bottom: 0;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 0px;
+  padding: 0;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}

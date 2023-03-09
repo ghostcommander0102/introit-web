@@ -1,0 +1,49 @@
+@import "../theme/index";
+.button {
+  background: $focused;
+  color: $light-background;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  border: 0;
+  position: relative;
+  top: 6px;
+  @extend .button;
+  &:hover {
+    background: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background;
+  }
+}
+.icon {
+  padding-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.miniButton {
+  background: $focused;
+  color: $light-background;
+  border-radius: 8px;
+  width: 40px;
+  height: 34px;
+  border: 0;
+  position: relative;
+  top: 6.5px;
+  padding: 0;
+  @extend .button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background: $focused;
+    color: $light-background;
+  }
+}

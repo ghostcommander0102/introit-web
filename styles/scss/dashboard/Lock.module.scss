@@ -1,0 +1,71 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: $light-background2;
+  width: 571px;
+  height: 414px;
+  border-radius: 8px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 85px;
+  text-align: center;
+}
+.darkWrapper {
+  background-color: $dark-background2;
+  width: 571px;
+  height: 414px;
+  border-radius: 8px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 85px;
+  text-align: center;
+}
+.lightText {
+  @extend .subtitle;
+  color: $light-body;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.darkText {
+  @extend .subtitle;
+  color: $dark-body;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.button {
+  background-color: $focused;
+  color: $light-background;
+  width: 193px;
+  height: 50px;
+  @extend .button;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 32px;
+  &:hover {
+    background-color: $focused;
+    color: $light-background;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $light-background;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lightWrapper {
+    width: 96%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .darkWrapper {
+    width: 96%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

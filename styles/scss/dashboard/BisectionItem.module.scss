@@ -1,0 +1,86 @@
+@import "../theme/index";
+.master:first-child {
+  .lightWrapper {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .darkWrapper {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+.master:last-child {
+  .lightWrapper {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .darkWrapper {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.lightWrapper {
+  background-color: $light-background2;
+  margin-bottom: 4px;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.darkWrapper {
+  background-color: $dark-background2;
+  margin-bottom: 4px;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.lightTitle {
+  @extend .small;
+  color: $light-body;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.darkTitle {
+  @extend .small;
+  color: $light-body;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.lightBody {
+  @extend .light-title;
+  color: $light-body;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.darkBody {
+  @extend .light-title;
+  color: $dark-body;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.Button {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: 0 0 0px;
+  border: 0;
+  margin-left: 16px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .lightWrapper {
+    height: 60px;
+    padding: 8px;
+  }
+
+  .darkWrapper {
+    height: 60px;
+    padding: 8px;
+  }
+}

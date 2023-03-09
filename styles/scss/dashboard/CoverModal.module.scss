@@ -1,0 +1,26 @@
+@import "../theme/index";
+.button {
+  background-color: $focused;
+  color: $dark-body;
+  width: 150px;
+  border-radius: 8px;
+  border: 0;
+  height: 45px;
+  &:hover {
+    background-color: $focused;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: $focused;
+    color: $dark-body;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+    position: absolute;
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

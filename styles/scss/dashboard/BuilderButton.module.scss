@@ -1,0 +1,97 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: $light-background2;
+  padding: 8px;
+  border-radius: 8px;
+}
+.darkWrapper {
+  background-color: $dark-background2;
+  padding: 8px;
+  border-radius: 8px;
+}
+.lightButton {
+  background-color: transparent;
+  color: $light-body;
+  border: 0;
+  width: 50%;
+  height: 33px;
+  @extend .button;
+  box-shadow: 0 0 0px;
+  &:hover {
+    background-color: transparent;
+    color: $light-body;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $light-body;
+  }
+}
+.darkButton {
+  background-color: transparent;
+  border: 0;
+  color: $dark-body;
+  width: 50%;
+  height: 33px;
+  @extend .button;
+  box-shadow: 0 0 0px;
+  &:hover {
+    background-color: transparent;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: transparent;
+    color: $dark-body;
+  }
+}
+.activeButton {
+  background-color: $focused !important;
+  color: $dark-body;
+  border: 0;
+  width: 50%;
+  height: 33px;
+  @extend .button;
+  box-shadow: 0 0 0px;
+  border-radius: 8px;
+  &:hover {
+    background-color: $focused !important;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: $focused !important;
+    color: $dark-body;
+  }
+}
+.lightText {
+  color: $light-body;
+  @extend .bold-body;
+  span {
+    @extend .body;
+  }
+}
+.darkText {
+  color: $dark-body;
+  @extend .bold-body;
+  span {
+    @extend .body;
+  }
+}
+.menuWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-background2;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: 0 0 0px;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}

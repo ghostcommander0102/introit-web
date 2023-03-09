@@ -1,0 +1,51 @@
+@import "../theme/index";
+.lightLabel {
+  @extend .light-title;
+  color: $light-body;
+  padding-left: 10px;
+}
+.darkLabel {
+  @extend .light-title;
+  color: $dark-body;
+  padding-left: 10px;
+}
+.lightButton {
+  background-color: transparent;
+  border: 0;
+  color: $light-body;
+  box-shadow: 0 0 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .button;
+  &:hover {
+    background-color: transparent;
+    border: 0;
+    color: $light-body;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+    color: $light-body;
+  }
+}
+.darkButton {
+  background-color: transparent;
+  border: 0;
+  color: $dark-body;
+  box-shadow: 0 0 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend .button;
+  &:hover {
+    background-color: transparent;
+    border: 0;
+    color: $dark-body;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 0;
+    color: $dark-body;
+  }
+}

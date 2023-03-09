@@ -1,0 +1,78 @@
+@import "../theme/index";
+.lightBold {
+  @extend .bold-body;
+  margin-bottom: 0;
+  color: $light-body;
+}
+.darkBold {
+  @extend .bold-body;
+  margin-bottom: 0;
+  color: $dark-body;
+}
+.lightTitle {
+  @extend .body;
+  margin-bottom: 0;
+  color: $light-body;
+}
+.darkTitle {
+  @extend .body;
+  margin-bottom: 0;
+  color: $dark-body;
+}
+.lightText {
+  @extend .small;
+  margin-bottom: 0;
+  color: $light-body;
+}
+.darkText {
+  @extend .small;
+  margin-bottom: 0;
+  color: $dark-body;
+}
+.lightRow {
+  &:nth-child(even) {
+    background-color: $light-background;
+  }
+}
+.darkRow {
+  &:nth-child(even) {
+    background-color: $dark-background;
+  }
+}
+.lightWrapperProgress {
+  background-color: $light-border-col;
+  width: 100%;
+  height: 4px;
+}
+.darkWrapperProgress {
+  background-color: $dark-border-col;
+  width: 100%;
+  height: 4px;
+}
+.lightProgress {
+  background-color: $light-body;
+  height: 6px;
+  position: relative;
+  top: -1.5px;
+}
+.darkProgress {
+  background-color: $dark-body;
+  height: 6px;
+  position: relative;
+  top: -1.5px;
+}
+.carouselWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+@media only screen and (max-width: 1024px) {
+  .carouselWrapper {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carouselWrapper {
+    width: 320px;
+  }
+}

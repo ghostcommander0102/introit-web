@@ -1,0 +1,260 @@
+@import "../theme/index";
+.wrapperLight {
+  background: $light-background;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  height: 213px;
+}
+.wrapperDark {
+  background: $dark-background;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  height: 213px;
+}
+.wrapperImg {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.titleLight {
+  @extend .bold-body;
+  color: $light-body;
+  white-space: nowrap;
+  line-height: 25px;
+}
+.titleDark {
+  @extend .bold-body;
+  color: $dark-body;
+  white-space: nowrap;
+}
+.subTitleLight {
+  @extend .light-title;
+  color: $light-body;
+  line-height: 19px;
+}
+.subTitleDark {
+  @extend .light-title;
+  color: $dark-body;
+}
+.priceLight {
+  @extend .small;
+  color: $light-body;
+  padding-left: 5px;
+  padding-top: 1.5px;
+  white-space: nowrap;
+}
+.priceDark {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: $dark-body;
+  padding-left: 5px;
+  padding-top: 3px;
+  white-space: nowrap;
+}
+.textLight {
+  font-weight: 500;
+  font-size: 14px;
+  color: $light-body;
+  padding-left: 5px;
+  white-space: nowrap;
+  span {
+    color: $focused;
+    font-weight: 700;
+  }
+}
+.textDark {
+  font-weight: 500;
+  font-size: 14px;
+  color: $dark-body;
+  padding-left: 5px;
+  white-space: nowrap;
+  span {
+    color: $focused;
+    font-weight: 700;
+  }
+}
+.seprateorLight {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #c6c2de;
+  position: absolute;
+  left: 0;
+  top: 75px;
+}
+.seprateorDark {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #c6c2de;
+  position: absolute;
+  left: 0;
+  top: 75px;
+}
+.seprateorJob {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #c6c2de;
+  position: absolute;
+  left: 0;
+  top: 90px;
+}
+.seprateorDown {
+  width: 100%;
+  height: 0.2px;
+  opacity: 0.1;
+  background-color: #c6c2de;
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+.statusApprove {
+  background-color: $confirm;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.statusViewed {
+  background-color: #6acce5;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.statusDisabled {
+  background-color: $warn;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+
+.statusSuspend {
+  background-color: $danger;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.timeLight {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: $light-body;
+}
+.timeDark {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: $dark-body;
+}
+.seeMore {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: $light-body;
+  padding-top: 15px;
+}
+.lightDrawer {
+  border: 0;
+}
+.darkDrawer {
+  border: 0;
+  background-color: transparent;
+  &:focus {
+    border: 0;
+    background: transparent !important;
+  }
+  &:hover {
+    border: 0;
+    background: transparent !important;
+  }
+}
+.lightButton {
+  background-color: $light-background2;
+  height: 32px;
+  border-radius: 8px;
+  border: 0;
+  @extend .small;
+  color: $light-body;
+  &:focus {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+  &:hover {
+    background-color: $light-background2;
+    color: $light-body;
+  }
+}
+.darkButton {
+  background-color: $dark-background2;
+  height: 32px;
+  border-radius: 8px;
+  border: 0;
+  @extend .small;
+  color: $dark-body;
+  &:focus {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+  &:hover {
+    background-color: $dark-background2;
+    color: $dark-body;
+  }
+}
+.lightEmpty {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $light-background2;
+}
+.darkEmpty {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $dark-background2;
+}
+.lightWrapperPlaceHolder {
+  width: 48px;
+  height: 48px;
+  background-color: $light-background2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.darkWrapperPlaceHolder {
+  width: 48px;
+  height: 48px;
+  background-color: $dark-background2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statusWrapper {
+  position: absolute;
+  z-index: 9;
+  left: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .wrapperLight {
+    height: auto !important;
+  }
+  .wrapperDark {
+    height: auto !important;
+  }
+}
+// Suspended Red F37070
+// Approved Green 15C0AB
+// Viewed Blue 6ACCE5
+// Disabled Yellow FBB03B

@@ -1,0 +1,78 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: $light-background2;
+  color: $light-body;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.darkWrapper {
+  background-color: $dark-background2;
+  color: $dark-body;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.lightTitle {
+  color: $light-body;
+  margin-bottom: 0;
+  line-height: 22px;
+  @extend .small;
+}
+.darkTitle {
+  color: $dark-body;
+  @extend .small;
+  margin-bottom: 0;
+}
+.flagWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  background-color: $focused;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $light-background;
+    line-height: 18px;
+    @extend .bold-title;
+  }
+}
+.lightCounter {
+  color: $light-body;
+  @extend .light-title;
+  margin-bottom: 0;
+}
+.darkCounter {
+  color: $dark-body;
+  @extend .light-title;
+  margin-bottom: 0;
+}
+.button {
+  border: 0;
+  box-shadow: 0 0 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0;
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lightWrapper {
+    height: 55px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .darkWrapper {
+    height: 55px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../theme/index";
+.lightLabel {
+  color: $light-body;
+  @extend .light-title;
+}
+.darkLabel {
+  color: $dark-body;
+  @extend .light-title;
+}

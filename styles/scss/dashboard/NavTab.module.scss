@@ -1,0 +1,55 @@
+@import "../theme/index";
+.textBold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6e7191;
+}
+.textBoldDark {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f2f2f8;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6e7191;
+}
+.textDark {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #f2f2f8;
+}
+.button {
+  padding: 7px 17px;
+  background: #e5e5f1;
+  border-radius: 15px;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin: 0px 5px;
+  color: #6e7191;
+  margin-bottom: 30px;
+}
+.buttonDark {
+  padding: 7px 17px;
+  background: #292a3a;
+  border-radius: 15px;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin: 0px 5px;
+  color: #f2f2f8;
+  margin-bottom: 30px;
+}
+.buttonActive {
+  background: $focused !important;
+  color: #f2f2f8 !important;
+}

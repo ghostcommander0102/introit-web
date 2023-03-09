@@ -1,0 +1,41 @@
+@import "../theme/index";
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 155px;
+  height: 155px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #6e7191;
+  position: relative;
+  &:hover {
+    button {
+      transition: 0.3s;
+      display: flex;
+    }
+    border: 2px solid #3869ff;
+  }
+}
+.button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #f2f2f8;
+  border-radius: 10px 0px 8px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  display: none;
+  transition: 0.3s;
+  &:hover {
+    background-color: #f2f2f8;
+    border: 0;
+  }
+  &:focus {
+    background-color: #f2f2f8;
+    border: 0;
+  }
+}

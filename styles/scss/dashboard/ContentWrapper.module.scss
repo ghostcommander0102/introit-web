@@ -1,0 +1,43 @@
+@import "../theme/index";
+.lightWrapper {
+  background-color: $light-background;
+  height: calc(100vh - 118px);
+  overflow-y: scroll;
+  width: 100%;
+  padding: 8px;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $light-border-col;
+  }
+}
+.darkWrapper {
+  background-color: $dark-background;
+  height: calc(100vh - 118px);
+  overflow-y: scroll;
+  width: 100%;
+  padding: 8px;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $dark-border-col;
+  }
+}
+@media (max-width: 1024px) {
+  .lightWrapper {
+    overflow-y: inherit;
+  }
+  .darkWrapper {
+    overflow-y: inherit;
+  }
+}
+@media (max-width: 768px) {
+  .lightWrapper {
+    height: 100%;
+  }
+  .darkWrapper {
+    height: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../theme/index";
+.lightWrapper {
+  @extend .small;
+  color: $light-body;
+  a {
+    color: $light-body;
+  }
+}
+.darkWrapper {
+  @extend .small;
+  color: $dark-body;
+  a {
+    color: $dark-body;
+  }
+}

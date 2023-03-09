@@ -1,0 +1,534 @@
+@import "../theme/index";
+.canvas {
+    transform-origin: left top;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    .prev {
+        transform: rotate(180deg);
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+    }
+
+    .disabled {
+        opacity: 0.3;
+        cursor: auto;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.soho {
+    font-family: 'PTSansCaption', sans-serif;
+    font-style: normal;
+    color: #3B3841;
+}
+
+.soho.light {
+    color: #373D48;
+}
+
+.soho.dark {
+    color: #EEF8EE;
+}
+
+.resumeContent {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -2000px;
+
+    img {
+        // opacity: 0;
+        visibility: visible !important;
+    }
+
+    svg {
+        opacity: 0;
+    }
+}
+
+.resume {
+    width: 720px;
+    height: 1019px;
+    background: radial-gradient(274.34% 262.58% at -35.28% 87.83%, #DED5EF 0%, #D5F6FF 100%);
+    background-repeat: no-repeat;
+    padding: 20px 18px;
+    position: relative;
+    display: flex;
+    // flex-wrap: wrap;
+
+    .resumeLine {
+        position: absolute;
+        border-left: 2px solid #BFC8DD;
+        height: 986px;
+        left: 87px;
+        top: 33px;
+        z-index: 0;
+    }
+
+    .resumeLine1 {
+        top: 173px;
+        height: 859px;
+    }
+
+    .resumeCircle {
+        z-index: 1;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #3B3841;
+    }
+
+    .part_1 {
+        width: 491px;
+
+        .info {
+            display: flex;
+
+            .namebg {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #3B3841;
+                padding: 40px 0px 0px 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                color: #DAE6F8;
+            }
+
+            .info1 {
+                margin-left: 18px;
+                margin-top: 6px;
+
+                .name {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+
+                .job {
+                    margin-top: 4px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        .maintitle {
+            display: flex;
+            align-items: center;
+            margin-top: 34px;
+            margin-left: 57px;
+
+            img {
+                z-index: 1;
+            }
+
+            .about {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                text-align: center;
+                margin-left: 12px;
+            }
+        }
+
+        .descriptionContent {
+            margin-left: 66px;
+            margin-top: 14px;
+            position: relative;
+
+            .resumeCircle {
+                position: absolute;
+                top: 5px;
+            }
+
+            .description {
+                font-weight: 400;
+                font-size: 14px;
+                margin-left: 21px;
+                line-height: 22px;
+            }
+        }
+
+    }
+
+    .part_2 {
+        width: 193px;
+
+        .profile {
+
+            .maintitle {
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+
+                .title {
+                    margin-left: 9px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .info {
+                margin-top: 16px;
+
+                .title {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 10.56px;
+                }
+
+                .text {
+                    margin-top: 4px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    width: 193px;
+                    word-wrap: break-word;
+                    line-height: 10.56px;
+                }
+            }
+        }
+    }
+
+    .section_1 {
+        background-color: white;
+        width: 100%;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+
+        .name {
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            line-height: 23.88px;
+        }
+
+        .job {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .contactlist {
+            a:not(:first-child) {
+                margin-left: 33px;
+            }
+        }
+    }
+
+    .section_2 {
+        margin-top: 48px;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+
+        .description {
+            margin-left: 35px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17.5px;
+        }
+    }
+
+    .section_3 {
+        margin-top: 54px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .infoItem {
+            width: 33%;
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+
+            img {
+                margin-right: 8px;
+            }
+
+            .info {
+                width: 160px;
+
+                .title {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 10.56px;
+                }
+
+                .text {
+                    margin-top: 2px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 10.56px;
+                    word-wrap: break-word;
+                }
+            }
+
+        }
+    }
+
+    .componentTitle {
+        position: absolute;
+        // background-color: #454545;
+        // padding: 0px 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        .title {
+            margin-left: 12px;
+        }
+
+
+    }
+
+    .componentTitle1 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+
+        .title {
+            margin-left: 9px;
+        }
+    }
+
+    .eduContent,
+    .expContent,
+    .extraContent,
+    .hobbyContent,
+    .addContent,
+    .honorContent {
+        position: absolute;
+        display: flex;
+
+        .resumeCircle {
+            margin-top: 5px;
+        }
+
+        .mainContent {
+            margin-left: 21px;
+
+            .content {
+                display: flex;
+                width: 378px;
+                justify-content: space-between;
+
+                .title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+
+                .location {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+
+            .role {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-top: 6px;
+            }
+        }
+
+
+
+        .Date {
+            position: absolute;
+            left: -61px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            width: 52px;
+        }
+
+        .role {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .expContent,
+    .extraContent,
+    .honorContent {
+        .content {
+            flex-direction: column;
+
+            .location {
+                margin-top: 4px;
+            }
+        }
+
+        .description {
+            margin-top: 6px;
+        }
+    }
+
+    .skillContent,
+    .languageContent,
+    .expertiseContent {
+        position: absolute;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 192px;
+            margin-top: 4px;
+
+            .level,
+            .percentage {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .coursesContent {
+        position: absolute;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .date {
+            margin-top: 4px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .internContent {
+        position: absolute;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .location,
+        .date {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 4px;
+        }
+    }
+
+    .referContent {
+        position: absolute;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .company,
+        .email,
+        .phone {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 4px;
+            word-break: break-all;
+        }
+    }
+
+    .contactList {
+        position: absolute;
+
+        img:not(:first-child) {
+            margin-left: 16px;
+        }
+    }
+}
+
+.resume.light {
+    background: none;
+    background-color: white;
+
+    .namebg {
+        color: #FFFFFF !important;
+        background-color: #373D48 !important;
+    }
+
+    .resumeLine {
+        border-color: #D5D6D6;
+    }
+
+    .resumeCircle {
+        background-color: #373D48;
+    }
+}
+
+.resume.dark {
+    background: none;
+    background-color: #1D1F1D;
+
+    .namebg {
+        background-color: #EEF8EE !important;
+        color: #1D1F1D !important;
+    }
+
+    .resumeLine {
+        border-color: #878E87;
+    }
+
+    .resumeCircle {
+        background-color: #EEF8EE;
+    }
+}
+
+.button {
+    @extend .button;
+    background-color: $focused;
+    width: 100%;
+    color: $dark-body;
+    height: 45px;
+
+    &:hover {
+        background-color: $focused;
+        color: $dark-body;
+    }
+
+    &:focus {
+        background-color: $focused;
+        color: $dark-body;
+    }
+}

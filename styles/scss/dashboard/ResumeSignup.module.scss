@@ -1,0 +1,34 @@
+@import "../theme/index";
+.lightText {
+  @extend .body;
+  color: $light-body;
+}
+.lightTextBold {
+  @extend .header3;
+  color: $light-body;
+}
+.lightTextBlue {
+  @extend .header3;
+  color: $focused;
+}
+.lightButtonStep {
+  border: 4px solid #ced2df;
+  border-radius: 8px;
+  height: 256px;
+  width: 330px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 52px;
+  .lightTitle {
+    margin-top: 40px;
+    @extend .bold-body;
+  }
+  .lightText {
+    margin-top: 40px;
+    width: 229px;
+    white-space: pre-wrap;
+    @extend .body;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
